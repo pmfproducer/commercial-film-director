@@ -360,7 +360,7 @@ def invalidate_stale_cycle(
         if assignment.get("cycle_id") == cycle.get("cycle_id"):
             assignment["status"] = "REVISION_REQUIRED"
     append_room(root, f"{cycle['cycle_id']} — ENTRADAS OBSOLETAS", [
-        "Motivo: mudança formal em fase a montante",
+        "Motivo: mudança formal nas decisões do projeto",
         "Entradas alteradas: " + ", ".join(f"`{item}`" for item in changed),
         "Estado: `REVISION_REQUIRED`; abrir nova rodada com hashes atuais",
     ])
@@ -368,9 +368,8 @@ def invalidate_stale_cycle(
 
 def accepted_cycle(state: dict[str, Any], phase_id: str) -> dict[str, Any] | None:
     cycles = state.get("workflow_registry", {}).get(phase_id, [])
-    for cycle in reversed(cycles):
-        if cycle.get("status") == "ACCEPTED_BY_DIRECTOR":
-            return cycle
+    if cycles and cycles[-1].get("status") == "ACCEPTED_BY_DIRECTOR":
+        return cycles[-1]
     return None
 
 
@@ -1332,6 +1331,17 @@ def command_revise_from(args: argparse.Namespace) -> int:
     affected: list[str] = []
     for phase in PHASES[start:]:
         phase_state = state["phases"][phase["id"]]
+        # Human change control invalidates prior acceptance even before files change.
+        for cycle in state.get("workflow_registry", {}).get(phase["id"], []):
+            if cycle.get("status") not in {"REVISION_REQUIRED", "REJECTED"}:
+                invalidate_stale_cycle(root, state, cycle, [])
+                cycle["invalidation"].update(reason="CHANGE_CONTROL", human_reason=args.reason)
+                for task in cycle.get("tasks", []):
+                    if task.get("status") == "ASSIGNED":
+                        task.update(status="CANCELLED_BY_DIRECTOR", cancelled_at=now_iso(), cancellation_reason=args.reason)
+        exemptions = state.get("legacy_acceptance_exemptions", [])
+        if phase["id"] in exemptions:
+            exemptions.remove(phase["id"])
         if phase_state["status"] != "PENDING":
             phase_state["status"] = "REVISE"
             phase_state["approved_at"] = None

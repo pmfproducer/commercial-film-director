@@ -4,6 +4,29 @@
 
 Skill de criação e realização publicitária com direção e especialistas temporários, formação por departamento e repertório de pesquisa consultável. A pessoa traz uma ideia; a sala desenvolve história, encenação, imagem, arte, montagem, som e plano de execução.
 
+## Dashboard incluído
+
+![Dashboard local com o projeto de exemplo Remenda](assets/dashboard/preview.png)
+
+O painel local permite criar ou abrir um projeto, acompanhar as 12 etapas, consultar
+as tarefas reais dos especialistas, editar documentos com histórico, aprovar ou pedir
+revisões, navegar pelos storyboards existentes e exportar o projeto em ZIP.
+
+Depois de instalar, abra com:
+
+```bash
+python3 "$HOME/.codex/skills/commercial-film-director/scripts/dashboard.py"
+```
+
+O navegador abre automaticamente. Para continuar um projeto existente, use
+`--project-dir "/caminho/do/projeto"`. O painel usa apenas Python e arquivos locais.
+O botão de conversar com a direção usa **Codex CLI instalado e autenticado com
+`codex login`**, consumindo os limites dessa conta. Não exige chave de API adicional.
+Sem o CLI, consulta, edição, revisão e exportação continuam disponíveis.
+Instalar a skill não inicia o servidor sozinho; peça para abrir o dashboard ou execute o comando.
+
+[Guia do dashboard](references/dashboard.md)
+
 ## Funcionamento
 
 O diretor formula a questão do filme e convoca os especialistas pertinentes. Cada tarefa recebe um pacote com o contrato da profissão, trechos curriculares, referências recuperadas e fontes. As áreas propõem soluções, discutem dependências e revisam decisões. A direção integra o resultado.
@@ -16,7 +39,7 @@ Copie esta pasta completa para o diretório de skills do ambiente. É necessári
 
 ### Instalar pelo ZIP
 
-1. Abra [Releases](https://github.com/pmfproducer/commercial-film-director/releases/latest) e baixe `commercial-film-director-v6.0.0.zip`.
+1. Abra [Releases](https://github.com/pmfproducer/commercial-film-director/releases/latest) e baixe `commercial-film-director-v6.1.0.zip`.
 2. Extraia o arquivo e copie a pasta `commercial-film-director` inteira para o diretório de skills do assistente.
 3. Na instalação local de Codex em macOS, a pasta usada é `~/.codex/skills/commercial-film-director`.
 4. Em uma nova conversa, peça para usar `commercial-film-director` e conte a ideia do filme.

@@ -1,5 +1,13 @@
 # Histórico de versões
 
+## v6.1.0 — Dashboard local
+
+- Painel visual integrado aos arquivos reais, 12 fases, tarefas e storyboards.
+- Criação, abertura, edição com histórico, aprovação, revisão e exportação.
+- Ponte com Codex CLI autenticado, execução por projeto e cancelamento.
+- Revisão humana invalida aceites anteriores e exige nova rodada dos especialistas.
+- Servidor local sem dependências extras e instruções de uso na skill.
+
 ## v6.0.0 — Repertório conectado aos especialistas
 
 - Formação e contratos profissionais conectados aos briefs dos especialistas.

@@ -11,6 +11,17 @@ Conduza o filme como diretor e produtora, não como pesquisador que responde um 
 
 Conhecimento não substitui execução. Pesquisa, referências, câmera, lentes, cor, arte, som e prompts só entram quando servem à direção vigente.
 
+## Dashboard local na jornada do projeto
+
+Ao iniciar ou continuar um projeto, apresente também o painel visual funcional.
+Leia `references/dashboard.md` e execute `scripts/dashboard.py` com o diretório
+real do projeto. Abra a URL retornada no navegador disponível e entregue esse
+link à pessoa. Reutilize um servidor desta sessão quando já existir. O painel
+acompanha os mesmos arquivos, decisões e especialistas usados nesta skill.
+Se `CFD_DASHBOARD_CHILD=1`, você já foi chamado pelo painel: não abra outro servidor.
+Instalar arquivos não inicia serviços automaticamente; a abertura ocorre no primeiro uso
+ou pelo comando documentado. Nunca descreva o exemplo visual como o projeto da pessoa.
+
 ## Formação, repertório e colaboração
 
 Esta skill organiza uma produtora publicitária virtual: a pessoa traz uma ideia,

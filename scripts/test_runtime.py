@@ -376,6 +376,8 @@ def test_stale_submitted_cycle_can_reopen(root: Path) -> None:
         "revise-from", "--project-dir", str(project), "--phase", "06_DECOUPAGE",
         "--reason", "Falha downstream exige corrigir o pacote técnico",
     )
+    rejected = subprocess.run([sys.executable, str(RUNTIME), "complete", "--project-dir", str(project), "--phase", "06_DECOUPAGE"], capture_output=True, text=True)
+    assert rejected.returncode != 0, "Human revision must require a fresh accepted review"
     fill_phase(project, "06_DECOUPAGE")
     with (project / "06_SHOT_LIST.md").open("a", encoding="utf-8") as handle:
         handle.write("\nCorreção formal propagada do teste downstream.\n")
@@ -386,8 +388,8 @@ def test_stale_submitted_cycle_can_reopen(root: Path) -> None:
     fresh_cycle = open_cycle(project, "07_ASSETS_CONTINUITY", parent=stale_cycle)
     cycles = state(project)["workflow_registry"]["07_ASSETS_CONTINUITY"]
     assert cycles[-2]["status"] == "REVISION_REQUIRED"
-    assert cycles[-2]["invalidation"]["reason"] == "STALE_INPUTS"
-    assert "06_SHOT_LIST.md" in cycles[-2]["invalidation"]["changed_inputs"]
+    assert cycles[-2]["invalidation"]["reason"] == "CHANGE_CONTROL"
+    assert cycles[-2]["invalidation"]["human_reason"]
     assert fresh_cycle != stale_cycle
 
 

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Diretor Comercial · Sua produtora</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+<link rel="icon" href="data:,">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Ir para o projeto</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Projetos e etapas">
+      <div class="brand"><span class="brand-mark">PMF</span><span class="brand-product">Diretor Comercial</span></div>
+      <button class="new-project" id="new-project">＋ Novo projeto</button>
+      <button class="open-project" id="open-project">Abrir uma pasta de projeto</button>
+      <label class="project-label" for="project-select">SEUS PROJETOS</label>
+      <select id="project-select" aria-label="Selecionar projeto"><option value="">Carregando projetos…</option></select>
+      <nav class="stage-nav" id="stage-nav" aria-label="Etapas do filme"></nav>
+      <div class="sidebar-footer"><span class="local-dot"></span> Arquivos no seu computador<button id="show-example">Conheça o exemplo visual ↗</button></div>
+    </aside>
+    <main class="workspace" id="workspace">
+      <div id="connection-banner" class="notice error" role="status" hidden></div>
+      <section class="welcome" id="welcome" hidden>
+        <div class="eyebrow">SUA PRODUTORA PUBLICITÁRIA</div>
+        <h1>Uma ideia. Uma equipe.<br>Um filme para construir.</h1>
+        <p>Direção, roteiro, fotografia, arte, montagem e som trabalham sobre o mesmo projeto. Você acompanha as escolhas e revisa o que foi produzido.</p>
+        <div class="welcome-actions"><button class="primary-button" id="welcome-new">Começar meu filme</button><button class="quiet-button" id="welcome-example">Ver o painel visual</button></div>
+        <div class="welcome-steps"><article><span>01 / HISTÓRIA</span><h2>Encontre a ideia do filme</h2><p>Briefing, referências, rotas criativas e roteiro.</p></article><article><span>02 / DIREÇÃO</span><h2>Veja as escolhas ganharem forma</h2><p>Encenação, fotografia, arte, som e storyboard.</p></article><article><span>03 / PRODUÇÃO</span><h2>Prepare a execução</h2><p>Planos, recursos, montagem, revisões e pacote final.</p></article></div>
+        <p class="welcome-footnote">O painel acompanha arquivos reais. O trabalho criativo pode ser conduzido na conversa com o Codex ou pelo assistente ao lado do projeto.</p>
+      </section>
+      <div id="project-view" hidden>
+        <header class="topbar"><div><div class="eyebrow" id="project-eyebrow">PROJETO</div><h1 id="project-title"></h1><p id="project-client"></p></div><div class="topbar-actions"><button class="quiet-button" id="copy-link">Copiar link local</button><button class="primary-button" id="export-project">Exportar pacote ↓</button></div></header>
+        <div class="overview-grid">
+          <article class="metric-card progress-card"><div><span>Etapas desenvolvidas</span><strong id="progress-count">0 / 12</strong></div><div class="progress-track" role="progressbar" id="progress-bar" aria-label="Desenvolvimento do filme" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0"><div id="progress-fill"></div></div></article>
+          <article class="metric-card"><span>Trabalho da equipe</span><strong id="team-count">0</strong><small>participações registradas</small></article>
+          <article class="metric-card"><span>Próximo passo</span><strong class="metric-text" id="next-action"></strong></article>
+        </div>
+        <div class="content-grid">
+          <section class="stage-panel">
+            <div class="stage-header"><div><span class="section-kicker" id="stage-number"></span><h2 id="stage-title"></h2></div><span class="status-pill" id="stage-status"></span></div>
+            <p class="stage-description" id="stage-description"></p>
+            <div class="view-tabs" role="tablist" aria-label="Conteúdo da etapa"><button role="tab" id="tab-documents" data-tab="documents" aria-selected="true">Documentos</button><button role="tab" id="tab-team" data-tab="team" aria-selected="false">Equipe e decisões</button><button role="tab" id="tab-visual" data-tab="visual" aria-selected="false">Visual</button></div>
+            <div id="documents-view" role="tabpanel" aria-labelledby="tab-documents">
+              <div class="document-picker"><label for="document-select">Entregável</label><select id="document-select"></select><button class="quiet-button" id="edit-document" disabled>Editar conteúdo</button></div>
+              <div id="document-empty" class="empty-state" hidden><h3>Esta etapa ainda vai ganhar forma.</h3><p>O material aparece aqui assim que a equipe trabalhar nos arquivos do projeto.</p><button class="quiet-button" id="develop-empty">Pedir à equipe</button></div>
+              <article class="markdown document-content" id="document-content" aria-live="polite"></article>
+              <form id="editor-form" hidden><label for="document-editor" class="sr-only">Conteúdo do documento</label><textarea id="document-editor" spellcheck="false"></textarea><label for="edit-reason">O que você está ajustando?</label><input id="edit-reason" placeholder="Ex.: simplificar a abertura do filme"><p class="muted small">A alteração fica registrada. Etapas dependentes voltam à revisão quando necessário.</p><div class="editor-actions"><button class="quiet-button" type="button" id="cancel-edit">Cancelar edição</button><button class="primary-button" type="submit">Salvar alteração</button></div></form>
+            </div>
+            <div id="team-view" role="tabpanel" aria-labelledby="tab-team" hidden><div class="team-toolbar"><p>Propostas, pareceres e decisões registradas pelos especialistas.</p><label><input type="checkbox" id="all-team"> Mostrar todas as etapas</label></div><div id="team-cards"></div><div id="director-decisions"></div></div>
+            <div id="visual-view" role="tabpanel" aria-labelledby="tab-visual" hidden><div class="document-picker"><label for="visual-select">Material visual</label><select id="visual-select"></select><a class="quiet-button" id="open-visual" target="_blank" rel="noopener">Abrir maior ↗</a></div><div id="visual-empty" class="empty-state"><h3>O visual nasce das decisões do filme.</h3><p>Storyboards, plantas, imagens e vídeos do projeto aparecem aqui. Você também pode conhecer o exemplo que acompanha a produtora.</p><button class="quiet-button" id="visual-example">Abrir exemplo Remenda</button></div><div id="visual-frame"></div></div>
+            <div class="gate-bar"><div><span>REVISÃO DO PROJETO</span><strong id="gate-description">As decisões aprovadas ficam registradas.</strong></div><div class="gate-actions"><button id="revise-stage">Pedir alteração</button><button class="approve-button" id="approve-stage" disabled>Aprovar etapa</button></div></div>
+          </section>
+          <aside class="assistant-panel" aria-label="Diretor e equipe">
+            <div class="assistant-title"><span class="assistant-orb">✦</span><div><strong>Diretor e equipe</strong><small id="runner-status">Conferindo conexão…</small></div><button class="icon-button" id="runner-help" aria-label="Como conectar o assistente">?</button></div>
+            <div class="job-status" id="job-status" hidden><span class="working-dot"></span><span id="job-label">Equipe trabalhando</span><button id="cancel-job">Interromper</button></div>
+            <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+            <div class="suggestions"><button data-suggestion="Desenvolva a etapa atual com os especialistas necessários, usando o repertório e registrando os materiais no projeto.">Desenvolver etapa</button><button data-suggestion="Revise os materiais desta etapa e explique quais decisões ainda faltam.">Encontrar lacunas</button><button data-suggestion="Proponha uma alternativa mais simples para esta etapa, preservando a intenção do filme.">Simplificar solução</button></div>
+            <form class="assistant-input" id="message-form"><label for="message" class="sr-only">Pedido ao diretor</label><textarea id="message" placeholder="Conte sua ideia ou peça uma alteração…" required></textarea><div class="message-options"><label for="message-mode" class="sr-only">Alcance do pedido</label><select id="message-mode"><option value="phase">Trabalhar nesta etapa</option><option value="project">Desenvolver o filme completo</option><option value="question">Só conversar sobre o projeto</option></select></div><div><small>Usa seu acesso ao Codex.</small><button type="submit" id="send-message">Enviar ↑</button></div></form>
+          </aside>
+        </div>
+        <footer class="project-footer"><span id="project-location"></span><span id="refresh-status">Atualização automática</span></footer>
+      </div>
+    </main>
+  </div>
+  <dialog id="form-dialog"><form id="dialog-form"><div class="dialog-heading"><h2 id="dialog-title"></h2><button class="icon-button" type="button" id="dialog-close" aria-label="Fechar">×</button></div><p id="dialog-description"></p><div id="dialog-fields"></div><p class="notice error" id="dialog-error" role="alert" hidden></p><div class="dialog-actions"><button class="quiet-button" type="button" id="dialog-cancel">Cancelar</button><button class="primary-button" type="submit" id="dialog-submit">Salvar</button></div></form></dialog>
+  <dialog id="example-dialog"><div class="dialog-heading"><div><span class="eyebrow">EXEMPLO DE DESENVOLVIMENTO</span><h2>Remenda · A saída certa</h2></div><button class="icon-button" id="example-close" aria-label="Fechar exemplo">×</button></div><p>Storyboard navegável de 20 segundos. Explore quadros, tempo e a planta de câmera e luz.</p><iframe id="example-frame" title="Storyboard do exemplo Remenda" sandbox="allow-scripts"></iframe></dialog>
+  <div id="toast" role="status" hidden></div>
+</body>
+</html>
