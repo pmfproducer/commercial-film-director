@@ -19,9 +19,37 @@ const statusCopy={PENDING:["A iniciar","pending"],IN_PROGRESS:["Em desenvolvimen
 const roleCopy={RESEARCHER:"Pesquisa",CREATIVE_DIRECTOR:"Direção criativa",SCREENWRITER:"Roteiro",CRITIC:"Revisão independente",PERFORMANCE_DIRECTOR:"Direção de performance",DP:"Fotografia",PRODUCTION_DESIGNER:"Direção de arte",EDITOR:"Montagem",SOUND_DESIGNER:"Som",PRODUCER_AD:"Produção e assistência",CONTINUITY_SUPERVISOR:"Continuidade",STORYBOARD_ARTIST:"Storyboard",VFX_AI_SUPERVISOR:"VFX e IA",POST_QA:"Revisão de pós"};
 const taskCopy={ASSIGNED:"Tarefa atribuída",SUBMITTED:"Parecer entregue",ACCEPTED_BY_DIRECTOR:"Integrado pela direção",REVISION_REQUIRED:"Rodada em revisão",CANCELLED_BY_DIRECTOR:"Interrompida pela direção"};
 const verdictCopy={ACCEPT:"Decisão aceita",REVISE:"Revisão solicitada",MORE_RESEARCH:"Pesquisa adicional",CROSS_DEPARTMENT_REVIEW:"Discussão entre áreas",REJECT:"Proposta recusada"};
+const documentCopy={"00_SOURCE_MANIFEST":"Fontes e materiais recebidos","02_ROTAS_E_DIRECAO":"Rotas criativas e direção","00_DIRECTION_LOCK":"Decisões travadas pela direção","03_ROTEIRO_LITERARIO":"Roteiro literário","03_ROTEIRO_AV":"Roteiro audiovisual","04_TRATAMENTO_DIRECAO":"Tratamento de direção","04_MAPA_CENA_PERFORMANCE":"Mapa de cena e performance","05_DIRECAO_FOTOGRAFIA":"Direção de fotografia","05_DIRECAO_ARTE":"Direção de arte","05_ARQUITETURA_MONTAGEM_SOM":"Montagem e desenho de som","05_BIBLIA_VISUAL_SONORA":"Bíblia visual e sonora","06_ROTEIRO_TECNICO":"Roteiro técnico","06_SHOT_LIST":"Lista de planos","07_ASSET_BIBLE":"Bíblia de elementos e continuidade","07_ASSET_MANIFEST":"Manifesto de elementos","08_STORYBOARD_PREVIS":"Storyboard e pré-visualização","09_PLANO_PRODUCAO_HIBRIDA":"Plano de produção","09_PLANO_GERACAO_IA":"Plano de geração com IA","10_SHOT_PACKETS_PROMPTS":"Pacotes de execução por plano","11_MONTAGEM_SOM_POS":"Montagem, som e pós-produção","12_QA_MASTER_VERSOES":"Controle de qualidade e versões"};
 function esc(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function filename(path){return String(path).split("/").pop();}
-function textLabel(path){return filename(path).replace(/\.(md|json)$/i,"").replace(/^\d+_/,"").replaceAll("_"," ");}
+function textLabel(path){const base=filename(path).replace(/\.(md|json)$/i,"");return documentCopy[base]||base.replace(/^\d+_/,"").replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());}
+function humanize(text){
+  let value=String(text??"");
+  const phases={CREATIVE_DIRECTION:"direção criativa",BRIEF_STRATEGY:"briefing",SCRIPT:"roteiro",DIRECTOR_TREATMENT:"tratamento",VISUAL_SOUND_SYSTEM:"imagem, arte e som",DECOUPAGE:"decupagem",ASSETS_CONTINUITY:"elementos e continuidade",STORYBOARD_PREVIS:"storyboard",AI_EXECUTION_PLAN:"plano de produção",SHOT_PACKETS:"pacotes por plano",POST_DELIVERY:"montagem e pós",QA_VERSIONS:"controle de qualidade"};
+  value=value.replace(/\bCYCLE-(\d+)_([A-Z_]+)-(\d+)\b/g,(_,round,phase,version)=>`rodada ${Number(round)} de ${phases[phase]||phase.toLowerCase().replaceAll("_"," ")} ${version}`);
+  value=value.replace(/\bROUGH-v(\d+)\b/gi,(_,version)=>`rascunho ${Number(version)}`);
+  value=value.replace(/\bREVIEW-v(\d+)\b/gi,(_,version)=>`versão de revisão ${Number(version)}`);
+  value=value.replace(/\bMASTER-(\d+)\b/g,"master final $1");
+  value=value.replace(/\bPOST-QC-REPORT-(\d+)\b/g,"relatório de controle de qualidade $1");
+  value=value.replace(/\bTEST-R(\d+)-(\d+)\b/g,"teste de roteiro $2");
+  value=value.replace(/\bTEST-DP-(\d+)\b/g,"teste de fotografia $1");
+  value=value.replace(/\bTEST-SND-(\d+)\b/g,"teste de som $1");
+  value=value.replace(/\b(?:SRC|TASK|REVIEW)-(\d+)\b/g,(_,number)=>`registro ${number}`);
+  value=value.replace(/\bACCEPTED_BY_DIRECTOR\b/g,"integrado pela direção");
+  value=value.replace(/\bNOT_CONFIRMED\b/g,"ainda não confirmado");
+  value=value.replace(/\bPASS_MASTER\b/g,"aprovação do master final");
+  value=value.replace(/\bWORK\b/g,"em trabalho");
+  value=value.replace(/\bQA_DOCUMENTAL_DRAFT\b/g,"rascunho documental de controle de qualidade");
+  value=value.replace(/\bROUGH_DOCUMENTAL_REVIEW\b/g,"revisão documental do rascunho");
+  value=value.replace(/\bCOMPLETE_DRAFT\b/g,"rascunho concluído");
+  value=value.replace(/\bIN_PROGRESS\b/g,"em desenvolvimento");
+  value=value.replace(/\bPENDING\b/g,"a iniciar");
+  value=value.replace(/\bAPPROVED\b/g,"aprovado");
+  value=value.replace(/\bREVISE\b/g,"em revisão");
+  value=value.replace(/\bSUBMITTED\b/g,"entregue para revisão");
+  value=value.replace(/\bR([1-3])\b/g,"rota $1");
+  return value;
+}
 function projectBase(){return `/api/projects/${encodeURIComponent(app.project.id)}`;}
 function currentJob(){return app.project?.job?.active_job || app.project?.job?.last_job || null;}
 function runningJob(){return !!app.project?.job?.busy;}
@@ -34,6 +62,7 @@ async function api(path,options={}){
 }
 function relativePath(path){const parts=path.startsWith("/")?[]:(app.document?.path?.split("/").slice(0,-1)||[]);for(const part of path.split("/")){if(part==="..")parts.pop();else if(part!=="."&&part)parts.push(part);}return parts.join("/");}
 function inline(text){
+  text=humanize(text);
   let safe=esc(text);safe=safe.replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
   safe=safe.replace(/\[([^\]]+)\]\(([^)]+)\)/g,(_,label,target)=>{target=target.replace(/^&lt;|&gt;$/g,"");if(/^https?:\/\//i.test(target))return `<a href="${target}" target="_blank" rel="noopener noreferrer">${label}</a>`;if(/^[a-z]+:/i.test(target)||target.startsWith("//")||target.startsWith("#"))return label;return `<a href="#" data-document="${esc(relativePath(target))}">${label}</a>`;});
   return safe.replace(/&lt;&lt;PREENCHER[^&]*&gt;&gt;/g,"<span class=\"draft-placeholder\">A desenvolver</span>");
@@ -61,7 +90,7 @@ function renderChrome(){
   const st=statusCopy[selected.status]||statusCopy.PENDING;$("stage-status").textContent=st[0];$("stage-status").className=`status-pill status-${st[1]}`;
   const active=runningJob();$("approve-stage").disabled=selected.status!=="COMPLETE_DRAFT"||active||app.editing;$("approve-stage").textContent=selected.status==="APPROVED"?"Etapa aprovada":"Aprovar etapa";$("revise-stage").disabled=active||app.editing;$("edit-document").disabled=!app.document?.editable||active||app.editing;$("export-project").disabled=active;
   $("gate-description").textContent=selected.status==="COMPLETE_DRAFT"?"O rascunho está pronto para sua revisão.":selected.status==="APPROVED"?"Sua aprovação está registrada nesta versão.":"A aprovação fica disponível após a revisão da equipe.";
-  $("project-location").textContent=p.path;$("refresh-status").textContent="Atualizado com os arquivos do projeto";
+  $("project-location").textContent="Projeto local · arquivos preservados";$("project-location").title=p.path;$("refresh-status").textContent="Atualizado com os arquivos do projeto";
   app.runner=p.job?.capability||app.runner;$("runner-status").textContent=app.runner.authenticated?"Codex conectado neste computador":app.runner.available?"Codex precisa de login":"Conectar Codex para desenvolver";
   $("job-status").hidden=!active;$("job-label").textContent=currentJob()?.status==="cancelling"?"Interrompendo…":"Equipe trabalhando no projeto";$("send-message").disabled=active||app.busy||app.editing;
 }
@@ -86,7 +115,7 @@ async function loadDocument(path){
 function setTab(tab){app.tab=tab;for(const name of ["documents","team","visual"]){$(name+"-view").hidden=name!==tab;$("tab-"+name).setAttribute("aria-selected",String(name===tab));}}
 function renderTeam(){
   if(!app.project)return;const all=$("all-team").checked,tasks=(app.project.tasks||[]).filter(t=>all||t.cycle_id?.startsWith("CYCLE-"+app.phase+"-")),decisions=(app.project.state.director_reviews||[]).filter(r=>all||r.phase===app.phase),key=JSON.stringify([tasks,decisions,all,app.phase]);if(key===app.teamKey)return;app.teamKey=key;
-  $("team-cards").innerHTML=tasks.length?tasks.map(t=>`<article class="team-card"><header><h3>${esc(roleCopy[t.role]||t.role)}</h3><span class="small muted">${esc(taskCopy[t.status]||t.status)}</span></header><p>${t.actor_type==="ROLE_SIMULATION"?"Passe de papel simulado, sem um agente independente.":"Participação de especialista temporário registrada no projeto."}</p><div class="actor muted">${esc(t.actor_id||"")}</div>${t.submission_path?`<button class="quiet-button" data-document="${esc(t.submission_path)}">Ler parecer ↗</button>`:""}</article>`).join(""):'<div class="empty-state"><h3>A equipe aparece aqui quando trabalhar.</h3><p>Cada participação mostra seu parecer e a decisão da direção, conforme os registros reais do projeto.</p></div>';
+  $("team-cards").innerHTML=tasks.length?tasks.map(t=>`<article class="team-card"><header><h3>${esc(roleCopy[t.role]||t.role)}</h3><span class="small muted">${esc(taskCopy[t.status]||t.status)}</span></header><p>${t.actor_type==="ROLE_SIMULATION"?"Passe de papel simulado, sem um agente independente.":"Especialista temporário convocado para esta decisão."}</p><details class="technical-details"><summary>Registro técnico</summary><code>${esc(t.actor_id||"Especialista temporário")}</code></details>${t.submission_path?`<button class="quiet-button" data-document="${esc(t.submission_path)}">Ler parecer ↗</button>`:""}</article>`).join(""):'<div class="empty-state"><h3>A equipe aparece aqui quando trabalhar.</h3><p>Cada participação mostra seu parecer e a decisão da direção, conforme os registros reais do projeto.</p></div>';
   $("director-decisions").innerHTML=decisions.length?'<h3 class="section-title">Decisões da direção</h3>'+decisions.map(d=>`<article class="decision-card"><strong>${esc(verdictCopy[d.verdict]||d.verdict)}</strong><p>${esc(d.reason)}</p></article>`).join(""):"";
 }
 function visualFiles(){return(app.project?.files||[]).filter(f=>/\.(html|svg|png|jpe?g|webp|gif|pdf|mp4|webm|mov|mp3|wav|m4a)$/i.test(f.path)).sort((a,b)=>{const score=f=>/ROUGHBOARD\.html$/.test(f.path)?0:/\.html$/.test(f.path)?1:2;return score(a)-score(b)||a.path.localeCompare(b.path);});}

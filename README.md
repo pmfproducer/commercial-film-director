@@ -39,7 +39,7 @@ Copie esta pasta completa para o diretório de skills do ambiente. É necessári
 
 ### Instalar pelo ZIP
 
-1. Abra [Releases](https://github.com/pmfproducer/commercial-film-director/releases/latest) e baixe `commercial-film-director-v6.1.0.zip`.
+1. Abra [Releases](https://github.com/pmfproducer/commercial-film-director/releases/latest) e baixe o ZIP da versão mais recente.
 2. Extraia o arquivo e copie a pasta `commercial-film-director` inteira para o diretório de skills do assistente.
 3. Na instalação local de Codex em macOS, a pasta usada é `~/.codex/skills/commercial-film-director`.
 4. Em uma nova conversa, peça para usar `commercial-film-director` e conte a ideia do filme.

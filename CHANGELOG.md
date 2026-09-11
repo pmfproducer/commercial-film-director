@@ -1,5 +1,12 @@
 # Histórico de versões
 
+## v6.1.1 — Leitura humana no dashboard
+
+- Traduz códigos internos de rodadas, testes, status e versões na leitura dos documentos.
+- Apresenta nomes normais para os entregáveis, preservando os identificadores no arquivo original.
+- Oculta os IDs técnicos dos especialistas atrás de um registro expansível.
+- Remove o caminho absoluto do rodapé e deixa a linguagem visual adequada para apresentação à comunidade.
+
 ## v6.1.0 — Dashboard local
 
 - Painel visual integrado aos arquivos reais, 12 fases, tarefas e storyboards.
