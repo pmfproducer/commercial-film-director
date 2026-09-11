@@ -1,5 +1,9 @@
 # Histórico de versões
 
+## v6.1.2 — Status de teste traduzido
+
+- Traduz o último status técnico visível na leitura normal: \`NOT_TESTED\` vira “ainda não testado”.
+
 ## v6.1.1 — Leitura humana no dashboard
 
 - Traduz códigos internos de rodadas, testes, status e versões na leitura dos documentos.
