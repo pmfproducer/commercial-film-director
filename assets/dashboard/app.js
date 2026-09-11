@@ -61,6 +61,8 @@ function humanize(text){
   value=value.replace(/\bDP\b/g,"fotografia");
   value=value.replace(/\bFoley\b/g,"efeitos sonoros");
   value=value.replace(/\bmix\b/gi,"mixagem");
+  value=value.replace(/\bleitura do export final\b/gi,"leitura da exportação final");
+  value=value.replace(/\bcontrole de qualidade do export real\b/gi,"controle de qualidade da exportação real");
   value=value.replace(/\bexport final\b/gi,"exportação final");
   value=value.replace(/\bexport real\b/gi,"exportação real");
   value=value.replace(/\bexport\b/gi,"entrega");

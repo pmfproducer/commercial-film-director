@@ -1,5 +1,9 @@
 # Histórico de versões
 
+## v6.1.6 — Gramática da leitura traduzida
+
+- Corrige os artigos de “exportação final” e “exportação real” no texto apresentado pelo painel.
+
 ## v6.1.5 — Ajuste de contexto na tradução
 
 - Corrige as expressões “exportação final”, “exportação real” e “resultado aprovado” para preservar a gramática da leitura.
