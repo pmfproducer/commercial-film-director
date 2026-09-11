@@ -1,5 +1,10 @@
 # Histórico de versões
 
+## v6.1.4 — Jargão audiovisual traduzido
+
+- Traduz abreviações e termos comuns de fotografia, efeitos e pós-produção na leitura normal.
+- Preserva os identificadores canônicos quando eles funcionam como rastreabilidade de produção.
+
 ## v6.1.3 — Terminologia de produção traduzida
 
 - Traduz termos comuns de produção e pós-produção na leitura do painel, como handoff, roughboard, finishing, cue sheet, fitting, loudness e encode.

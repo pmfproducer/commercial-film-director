@@ -57,6 +57,15 @@ function humanize(text){
   value=value.replace(/\bEncode\b/gi,"exportação");
   value=value.replace(/\bPOST2D\b/g,"pós-produção 2D");
   value=value.replace(/\bsync\b/gi,"sincronização");
+  value=value.replace(/\bVFX\b/g,"efeitos visuais");
+  value=value.replace(/\bDP\b/g,"fotografia");
+  value=value.replace(/\bFoley\b/g,"efeitos sonoros");
+  value=value.replace(/\bmix\b/gi,"mixagem");
+  value=value.replace(/\bexport\b/gi,"entrega");
+  value=value.replace(/\blook\b/gi,"aparência");
+  value=value.replace(/\bbrief\b/gi,"briefing");
+  value=value.replace(/\bDOF\b/g,"profundidade de campo");
+  value=value.replace(/\bQC\b/g,"controle de qualidade");
   value=value.replace(/\bR([1-3])\b/g,"rota $1");
   return value;
 }
