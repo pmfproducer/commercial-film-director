@@ -1,0 +1,168 @@
+{
+  "contract_id": "camera.grip.dit",
+  "department": "camera_grip_dit",
+  "role_name": "Camera, Grip and DIT Lead",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S29",
+    "S30",
+    "S24",
+    "S28"
+  ],
+  "activation": {
+    "mode": "conditional",
+    "when": [
+      "real capture, complex movement, rig, multi-camera, data or virtual-production sync is planned"
+    ],
+    "skip_when": [
+      "fully found-footage project with no new capture and no conform issue"
+    ],
+    "required_inputs": [
+      "approved visual strategy",
+      "shot requirements",
+      "delivery specs",
+      "locations",
+      "schedule"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "camera package",
+      "support and movement method",
+      "focus and monitoring plan",
+      "data and color management",
+      "test procedure"
+    ],
+    "may_require": [
+      "load, access, power and media calculations",
+      "qualified grip or operator",
+      "backup and checksum workflow"
+    ],
+    "may_veto": [
+      "unsafe rig",
+      "insufficient media or backup",
+      "movement method that cannot repeat required action"
+    ],
+    "must_consult": [
+      "cinematography.dp",
+      "lighting.gaffer",
+      "vfx.virtual_production",
+      "production.ad_continuity"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What measurable movement must the system execute?",
+      "What is the failure mode?",
+      "How are focus, monitoring, metadata and backups protected?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "camera support",
+      "movement system",
+      "data",
+      "focus",
+      "monitoring",
+      "repeatability"
+    ],
+    "preferred_evidence": [
+      "technical manuals",
+      "camera-department interviews",
+      "rental-house tests",
+      "DIT and grip guidance"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "camera and support plan",
+      "movement test",
+      "data workflow",
+      "equipment dependency list"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "package traces to shot requirements",
+      "data has two verified copies",
+      "rig has human signoff"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "cinematography.dp",
+      "lighting.gaffer",
+      "vfx.virtual_production"
+    ],
+    "sends_to": [
+      "color.finishing",
+      "post.editing",
+      "production.ad_continuity",
+      "vfx.virtual_production"
+    ],
+    "shared_artifacts": [
+      "camera plan",
+      "test log",
+      "data plan",
+      "schedule"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "any rigging, crane, vehicle, cable, water or height requires qualified humans"
+    ],
+    "legal_or_rights_escalations": [
+      "drone, radio frequency, occupation, permit, privacy and captured-person data rights"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "gear list without function",
+      "single point of data failure",
+      "rig inferred safe by software",
+      "metadata omitted"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

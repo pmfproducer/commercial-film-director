@@ -1,0 +1,177 @@
+{
+  "contract_id": "production.ad_continuity",
+  "department": "assistant_direction_continuity",
+  "role_name": "Assistant Director and Continuity Lead",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S38",
+    "S39",
+    "S40",
+    "S41",
+    "S42",
+    "S21",
+    "S43",
+    "S66"
+  ],
+  "activation": {
+    "mode": "conditional",
+    "when": [
+      "an executable shot plan, schedule, performance continuity or multi-department shoot exists"
+    ],
+    "skip_when": [
+      "concept-only phase with no executable plan"
+    ],
+    "required_inputs": [
+      "script version",
+      "decoupage",
+      "department dependencies",
+      "cast/location availability",
+      "risk controls"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "schedule inputs",
+      "shoot order",
+      "dependency map",
+      "continuity bible",
+      "daily change log"
+    ],
+    "may_require": [
+      "version lock",
+      "timing and reset estimates",
+      "safety and welfare signoffs"
+    ],
+    "may_veto": [
+      "schedule violates safety or consent",
+      "essential continuity cannot be recorded",
+      "wrong script version reaches set"
+    ],
+    "must_consult": [
+      "production.executive",
+      "directing.film",
+      "all shoot departments"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What must match and what may change?",
+      "Which shot unlocks the day?",
+      "What reset or dependency is underestimated?",
+      "What changed since the last version?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "shoot order",
+      "continuity",
+      "reset",
+      "dependency",
+      "coverage",
+      "schedule risk"
+    ],
+    "preferred_evidence": [
+      "AD and script-supervisor training",
+      "union guidance",
+      "production reports",
+      "department estimates"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "schedule dependency sheet",
+      "continuity bible",
+      "version and change report"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "single source of truth named",
+      "open decisions visible",
+      "schedule respects human and technical constraints"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "activated departments",
+      "appearance.costume_hmu",
+      "art.production_design",
+      "camera.grip.dit",
+      "casting.performance",
+      "cinematography.dp",
+      "directing.film",
+      "lighting.gaffer",
+      "production.executive",
+      "sound.design_mix",
+      "vfx.virtual_production"
+    ],
+    "sends_to": [
+      "human crew",
+      "post.editing",
+      "production.executive"
+    ],
+    "shared_artifacts": [
+      "script master",
+      "decoupage",
+      "schedule",
+      "continuity bible",
+      "change log"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "hours, turnaround, minor, intimacy, stunt, crowd, weather or hazardous location"
+    ],
+    "legal_or_rights_escalations": []
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "schedule as unordered shot list",
+      "version drift",
+      "reset or travel omitted",
+      "continuity treated as only wardrobe"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

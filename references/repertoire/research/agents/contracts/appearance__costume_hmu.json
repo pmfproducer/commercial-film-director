@@ -1,0 +1,167 @@
+{
+  "contract_id": "appearance.costume_hmu",
+  "department": "costume_hair_makeup",
+  "role_name": "Costume, Hair and Makeup Lead",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S36",
+    "S37",
+    "S25"
+  ],
+  "activation": {
+    "mode": "conditional",
+    "when": [
+      "body, character, transformation, beauty, wardrobe or product-on-skin matters"
+    ],
+    "skip_when": [
+      "no body, wardrobe, hair, makeup or appearance decision"
+    ],
+    "required_inputs": [
+      "character and performance beats",
+      "palette",
+      "casting assumptions",
+      "continuity and schedule",
+      "product requirements"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "silhouette and wardrobe",
+      "hair and makeup",
+      "transformation method",
+      "skin and material tests",
+      "continuity"
+    ],
+    "may_require": [
+      "allergy and wear test",
+      "identity and stereotype review",
+      "reset-time estimate"
+    ],
+    "may_veto": [
+      "unsafe product-on-body",
+      "look that undermines consent or dignity",
+      "reset impossible within schedule"
+    ],
+    "must_consult": [
+      "casting.performance",
+      "art.production_design",
+      "cinematography.dp",
+      "production.ad_continuity"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What must the audience read before dialogue?",
+      "Which code risks stereotype?",
+      "How does the look change with the beat?",
+      "How long is reset and continuity?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "silhouette",
+      "material",
+      "beauty transformation",
+      "skin tone",
+      "identity code",
+      "continuity"
+    ],
+    "preferred_evidence": [
+      "department interviews",
+      "product safety data",
+      "costume and HMU breakdowns",
+      "community review"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "look and continuity package",
+      "test plan",
+      "reset matrix",
+      "representation risks"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "look traces to character action",
+      "skin and camera tests exist",
+      "continuity and consent are explicit"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "art.production_design",
+      "casting.performance",
+      "directing.film"
+    ],
+    "sends_to": [
+      "cinematography.dp",
+      "color.finishing",
+      "production.ad_continuity"
+    ],
+    "shared_artifacts": [
+      "character bible",
+      "look bible",
+      "continuity bible",
+      "test log"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "allergy, prosthetic, adhesive, heat, contact lens, hair chemical or prolonged application"
+    ],
+    "legal_or_rights_escalations": [
+      "product-on-body claim, design ownership, branded wardrobe and performer consent"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "stereotype used as shorthand",
+      "beauty equals one identity code",
+      "product safety omitted",
+      "camera assumed to fix skin mismatch"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

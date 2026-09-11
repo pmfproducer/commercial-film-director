@@ -1,0 +1,1383 @@
+{
+  "snapshot_date": "2026-09-11",
+  "source": "Existing Commercial Film Director research corpus",
+  "files": [
+    {
+      "path": "research/00_CORPUS_STATUS.md",
+      "sha256": "46c656326b41fd3862ecb44f9b3c039b8b0882391944c547c53a26ce986a2247",
+      "bytes": 18773
+    },
+    {
+      "path": "research/agents/CONTRACT_MATURITY_READINESS_POST_V27.md",
+      "sha256": "1024ae6ca08b973c0839f671a502dd469afd5e8930039ee79d34623e8e1fa5b0",
+      "bytes": 4125
+    },
+    {
+      "path": "research/agents/KNOWN_MATURITY_BLOCKERS_POST_V27.md",
+      "sha256": "f6394ba47a9f6b31b66dbadcb96b1d56f29b43c39b24bf61987d5d5c97147830",
+      "bytes": 9105
+    },
+    {
+      "path": "research/agents/contracts/appearance__costume_hmu.json",
+      "sha256": "5199b6b519f7fdd667f962d72d5fb0d55e38e8ba53cd7e9c6b8b1a14bf76398b",
+      "bytes": 4569
+    },
+    {
+      "path": "research/agents/contracts/art__production_design.json",
+      "sha256": "f78c1195050d7df062cf301ced88dc0bd5894e1d73f519caa8c310c0d9e66d5c",
+      "bytes": 4686
+    },
+    {
+      "path": "research/agents/contracts/camera__grip__dit.json",
+      "sha256": "5f23f03f0ed0118014933af6d625671f14c7fd1e181a32393f5ed4d0012cb70d",
+      "bytes": 4555
+    },
+    {
+      "path": "research/agents/contracts/casting__performance.json",
+      "sha256": "a54459d1398672705878b44b78c4dd402685a7348ecdfe22de6a23eb4a9c6ba4",
+      "bytes": 4589
+    },
+    {
+      "path": "research/agents/contracts/cinematography__dp.json",
+      "sha256": "69abf4cdce26a0539aaa0fee4fd12f377dbe8d9a44020679ebbb955ca1650aa7",
+      "bytes": 4757
+    },
+    {
+      "path": "research/agents/contracts/color__finishing.json",
+      "sha256": "00a8a9c6e56663228e769e176f309ba994825894c68215298ab90131a79cbd49",
+      "bytes": 4542
+    },
+    {
+      "path": "research/agents/contracts/creative__direction.json",
+      "sha256": "60c4289279017447711e4a81bb58fd5e966dad23d8d3f5fd1e6c1ae93f68186f",
+      "bytes": 5866
+    },
+    {
+      "path": "research/agents/contracts/critique__independent.json",
+      "sha256": "9827b7f438733728bd150150a869cdb9aa5fc4b78d163495cc7f2e6751fc2881",
+      "bytes": 6747
+    },
+    {
+      "path": "research/agents/contracts/directing__film.json",
+      "sha256": "4e12a7bcf6c1de260369f77a9b3b9deb0b1d1291dbd2951ba70ace007ee4d7ea",
+      "bytes": 4933
+    },
+    {
+      "path": "research/agents/contracts/lighting__gaffer.json",
+      "sha256": "bb91a476dbc010ef06e5fc5d83f610726aa749041d4f767d04457e09a80b4280",
+      "bytes": 4302
+    },
+    {
+      "path": "research/agents/contracts/music__supervision_score.json",
+      "sha256": "0c788aba1263e9a42815c1f1ba6290888b0b77038bc1023f3f57391a4f1acd8e",
+      "bytes": 4439
+    },
+    {
+      "path": "research/agents/contracts/post__editing.json",
+      "sha256": "058a7dffa993b4cf76aca13fd7f81c08696ac0767a498c46f56851ffef359708",
+      "bytes": 4635
+    },
+    {
+      "path": "research/agents/contracts/production__ad_continuity.json",
+      "sha256": "90185e985b52dc871587d388fc7f2ac0603fed515ac0d5332f23098050726ef9",
+      "bytes": 4680
+    },
+    {
+      "path": "research/agents/contracts/production__executive.json",
+      "sha256": "4e3cca1f10557267868518df8361c40077def73e17984694cfdc71122b647cba",
+      "bytes": 6291
+    },
+    {
+      "path": "research/agents/contracts/sound__design_mix.json",
+      "sha256": "d479483c8324d9b208a0759c4d79801586d9fff5b8a09f81992774027dc3bf91",
+      "bytes": 4633
+    },
+    {
+      "path": "research/agents/contracts/strategy__brand.json",
+      "sha256": "86d3dbc35f97451d45aa2896b4e94048a9faca8e92da52a99d5643bd0bd91b49",
+      "bytes": 5416
+    },
+    {
+      "path": "research/agents/contracts/treatment__pitch.json",
+      "sha256": "e6204720b80053578deee8980443fdc04172f10aff2472797fe0ed64981b8394",
+      "bytes": 4545
+    },
+    {
+      "path": "research/agents/contracts/vfx__virtual_production.json",
+      "sha256": "9ee851c8b7b2b7a7227e99dd1aa81e4de9a6a937c6dce89e01c6eae80cc8d60e",
+      "bytes": 4852
+    },
+    {
+      "path": "research/agents/contracts/writing__commercial.json",
+      "sha256": "5e47203d1750f8505ac717755b6efb49274631a504950dfd0f0780fc9cb90917",
+      "bytes": 4408
+    },
+    {
+      "path": "research/agents/index.json",
+      "sha256": "2f562f4444a4ebdd6f8c051f42c169e0e3ee52dc29a586ba30c5b54f580e82ae",
+      "bytes": 3783
+    },
+    {
+      "path": "research/batches/2026-08-10_BATCH_04_SIX_FORMS_ACQUISITION.md",
+      "sha256": "3ad1c2212649b756efe1a34ee1fae25c7f767cfbc0b95ddc4a82d203ef5f6449",
+      "bytes": 10452
+    },
+    {
+      "path": "research/curricula/2026-08-10_DEPARTMENT_CURRICULUM_MAP.md",
+      "sha256": "166915480256b53e9e4e3e13b26ad6722122804d8e42782fa936075f6769c827",
+      "bytes": 68382
+    },
+    {
+      "path": "research/films/1984_TECHNICAL_PASS.md",
+      "sha256": "635a4e49b5768d6afb1f0f35184b3d4d6b961e7b78922c1c454ade7c8535dd41",
+      "bytes": 8927
+    },
+    {
+      "path": "research/films/1995_LEVIS_DRUGSTORE_TECHNICAL_PASS.md",
+      "sha256": "a35db6c4b4785bcc41c1fc0d7bff98062b8cbfa288aa4cbf07686eb421fc4df3",
+      "bytes": 5106
+    },
+    {
+      "path": "research/films/1999_GUINNESS_SURFER_FIRST_PASS.md",
+      "sha256": "ca8a08fb8bd9a1a59f6d33a9acb806bc1e73347b00a72edd1c382c86b34be965",
+      "bytes": 6840
+    },
+    {
+      "path": "research/films/1999_GUINNESS_SURFER_TECHNICAL_PASS.md",
+      "sha256": "c24028ad80d19407b6ae0cd19ac44a6caa2b406ddb1f8e701227ee4cb1cd02c5",
+      "bytes": 8944
+    },
+    {
+      "path": "research/films/2003_HONDA_COG_TECHNICAL_PASS.md",
+      "sha256": "7a7115207a12fe7732080b5725f188f90b1ab838c38a4be1bbcf8f3bd44c997b",
+      "bytes": 5683
+    },
+    {
+      "path": "research/films/2007_CADBURY_GORILLA_TECHNICAL_PASS.md",
+      "sha256": "9c46bf9b79dab48fc04e9f53c6811cdb2044411eccc86ade490be11e29f49f5c",
+      "bytes": 5986
+    },
+    {
+      "path": "research/films/2011_CANAL_PLUS_THE_BEAR.md",
+      "sha256": "81f084372a9eafb8878b066c3c39ddfb60b75b17c086cb6de3b323eebdccdcff",
+      "bytes": 6369
+    },
+    {
+      "path": "research/films/2012_CANAL_THE_BEAR_TECHNICAL_PASS.md",
+      "sha256": "53e2563c4851ce3adaab90bfc1901b71b8502d3e4dfd1f9b7fb322c7082d952c",
+      "bytes": 13261
+    },
+    {
+      "path": "research/films/2012_DOLLAR_SHAVE_CLUB_OUR_BLADES_TECHNICAL_PASS.md",
+      "sha256": "6eb2acef7dafcc035cda8f24e06fc52f154da921808b19fbbc647aa139a21a6c",
+      "bytes": 5489
+    },
+    {
+      "path": "research/films/2012_GETTY_FROM_LOVE_TO_BINGO_TECHNICAL_PASS.md",
+      "sha256": "923bab273f12a95933f0ab72b99c9e7138360b052b45d8ec6ed3c4db47716e48",
+      "bytes": 4397
+    },
+    {
+      "path": "research/films/2013_GOOGLE_REUNION_TECHNICAL_PASS.md",
+      "sha256": "425c1b9d6d9adf0710115caecb00ce8891c48b492abf89a14c128bca89caedb2",
+      "bytes": 4719
+    },
+    {
+      "path": "research/films/2013_VOLVO_EPIC_SPLIT_TECHNICAL_PASS.md",
+      "sha256": "9992c87ef9d2db2af23795def9b85b46b6db77e0118f03aad4aacd2b3bc5c96d",
+      "bytes": 4768
+    },
+    {
+      "path": "research/films/2014_NZTA_MISTAKES_TECHNICAL_PASS.md",
+      "sha256": "198dde0e2a722536bad37bfe288d4333367a364c5ed7a2a6eb0af3f233c02413",
+      "bytes": 17892
+    },
+    {
+      "path": "research/films/2015_SHISEIDO_HIGH_SCHOOL_GIRL_TECHNICAL_PASS.md",
+      "sha256": "16998bd2197c4f97d6bf300e2b347a2cacec679637b8262ba127832d4fcc95c2",
+      "bytes": 20130
+    },
+    {
+      "path": "research/films/2018_APPLE_WELCOME_HOME_TECHNICAL_PASS.md",
+      "sha256": "ef85c5606165e9261651fe335028ca4afbb99174c52e9780215626da481a41e3",
+      "bytes": 15428
+    },
+    {
+      "path": "research/films/2018_CHICKEN_LICKEN_LEGEND_OF_BIG_JOHN_TECHNICAL_PASS.md",
+      "sha256": "06b2ccd4460deff81c6302ca9bac72790e065678b1128f0343d883f33a859678",
+      "bytes": 15787
+    },
+    {
+      "path": "research/films/2018_LIBRESSE_VIVA_LA_VULVA_TECHNICAL_PASS.md",
+      "sha256": "42dff6eef427ab7c8fe281dde1217e87d33f64a6040353d7e0907e17aec667e6",
+      "bytes": 13782
+    },
+    {
+      "path": "research/films/2020_LBCF_SPINNEYS_BREAD_EXAM_TECHNICAL_PASS.md",
+      "sha256": "0041eabdc2fc862d3cb5e22a96cd88bfaae6630beb1c69718aa6922bf532449e",
+      "bytes": 24797
+    },
+    {
+      "path": "research/films/2020_MATTERPORT_FOR_IPHONE_TECHNICAL_PASS.md",
+      "sha256": "a4bbcce52336f38fa06db73675903bc6dab5514887017fbb30ef6bc3b381dd57",
+      "bytes": 19449
+    },
+    {
+      "path": "research/films/2020_NIKE_YOU_CANT_STOP_US_TECHNICAL_PASS.md",
+      "sha256": "031f756269b7887ef698d0de0abb0126a73467e9a1308455a568edd69fdd6034",
+      "bytes": 14930
+    },
+    {
+      "path": "research/films/2021_BURBERRY_OPEN_SPACES_FIRST_PASS.md",
+      "sha256": "74d2a0c714af68211aac6a227ccbc03d4e66208fcc67c650a157fa1bf764dec8",
+      "bytes": 5625
+    },
+    {
+      "path": "research/films/2021_BURBERRY_OPEN_SPACES_TECHNICAL_PASS.md",
+      "sha256": "d276993ddf88ba89435c115d8c4630095a55f985b8eef17cd78bbc4705e8aeb6",
+      "bytes": 26871
+    },
+    {
+      "path": "research/films/2021_GUINNESS_BLACK_SHINES_BRIGHTEST_TECHNICAL_PASS.md",
+      "sha256": "b66ffa2e14563915e2cdf18acdbaa9cde76e9fcbfbb251cd95a04a549146c72f",
+      "bytes": 3350
+    },
+    {
+      "path": "research/films/2022_APPLE_THE_GREATEST_TECHNICAL_PASS.md",
+      "sha256": "b272f5aa4e7c3903a08a534a4c8aa6872747cd6ce3242bebef8342defd634249",
+      "bytes": 5891
+    },
+    {
+      "path": "research/films/2024_CHANNEL4_CONSIDERING_WHAT_TECHNICAL_PASS.md",
+      "sha256": "0b214a756481cc5045bb2f33c476d87a08635462bdaed2b6382957bb176f2797",
+      "bytes": 6765
+    },
+    {
+      "path": "research/films/2024_LOREAL_THE_FINAL_COPY_TECHNICAL_PASS.md",
+      "sha256": "b9522b3216cecf05aa42fe96f1f871fc0d029c94162de0c83ebdc81dc6426595",
+      "bytes": 8607
+    },
+    {
+      "path": "research/films/2024_THAI_LIFE_UNDER_MY_SKIN_TECHNICAL_PASS.md",
+      "sha256": "b7881cc1027a7e98fc6b5c5d2035103c99ddfdc7d29064c221ffc15728af42ba",
+      "bytes": 19550
+    },
+    {
+      "path": "research/methods/ANALYSIS_PROTOCOL.md",
+      "sha256": "d9e56a655a6c1fba5074a8d9a44392d153c5c3cc0a177a0b4537aa43d2b04083",
+      "bytes": 2442
+    },
+    {
+      "path": "research/methods/PROJECT_LIVE_RESEARCH_PROTOCOL.md",
+      "sha256": "72987c4378dbe9f4b286d089e92ad05f8d675c092a5e76babe0330f48b929eac",
+      "bytes": 8151
+    },
+    {
+      "path": "research/people/creative-directors/ALBERTO_PONTE_RYAN_OROURKE.md",
+      "sha256": "219c4ad825aad0a513855c0dde829507ffa1f79b4903d3d21abc81e060be0234",
+      "bytes": 5312
+    },
+    {
+      "path": "research/people/creative-directors/ARNAU_BOSCH.md",
+      "sha256": "223c3dd1c48bd9d9d93d28bff1523c8ec55de7ce9208e993654c6385d91755cc",
+      "bytes": 4514
+    },
+    {
+      "path": "research/people/creative-directors/BRIGID_ALKEMA.md",
+      "sha256": "35c60197460582273978ec2a22d23eb07661d9660db10f9ec210efaca7d6a81f",
+      "bytes": 5491
+    },
+    {
+      "path": "research/people/creative-directors/INDEX.md",
+      "sha256": "b5ff0fd88b142f6c5d457313d9e4fbbe4f1e99f755de14706ca740ac2539b906",
+      "bytes": 2735
+    },
+    {
+      "path": "research/people/creative-directors/JUDY_JOHN.md",
+      "sha256": "c614868a839afa9fcf1b324bc866fe2ae73e23da7d4794b8e24d5498a4a6f162",
+      "bytes": 4977
+    },
+    {
+      "path": "research/people/creative-directors/MARCELLO_SERPA.md",
+      "sha256": "d69bf7bdb188e99437f13a0c42fa14159aa22222e336a30bdf4bcf172c00e064",
+      "bytes": 4520
+    },
+    {
+      "path": "research/people/creative-directors/MASATO_KOSUKEGAWA.md",
+      "sha256": "d05acb5a85eecc970f98cb19779e20371c3e3e3d283c4605e207b89dd7c3de43",
+      "bytes": 5017
+    },
+    {
+      "path": "research/people/creative-directors/PIYUSH_PANDEY.md",
+      "sha256": "32f6bbcf973b05ff0aa6343b3232e77586395f936fc591bf3cf979d792cdaa06",
+      "bytes": 4849
+    },
+    {
+      "path": "research/people/creative-directors/STEPHANE_XIBERRAS.md",
+      "sha256": "9e9b0a238eaf8744891df0f18cb6ba9d83cc58be2596bdc7b27c66fd7d755d5f",
+      "bytes": 4919
+    },
+    {
+      "path": "research/people/creative-directors/TOBY_ALLEN_JIM_HILSON.md",
+      "sha256": "1b04dddf17eaa143fb80ea9682a6ffc6f80bedd88e8fda599677e43577add2b3",
+      "bytes": 5223
+    },
+    {
+      "path": "research/people/creative-directors/WALTER_CAMPBELL_TOM_CARTY.md",
+      "sha256": "adc9eec249fe9b0ba60a7943c045c06ed72d50f16d279abde4788f8088c24af3",
+      "bytes": 5130
+    },
+    {
+      "path": "research/people/directors/IAN_PONS_JEWELL.md",
+      "sha256": "92b6611291540325bd978e268333d5e4c312f066ec0fde6ae7cd65c8552e9676",
+      "bytes": 9867
+    },
+    {
+      "path": "research/people/directors/JONATHAN_GLAZER.md",
+      "sha256": "70478230c9d633c5d34b84599b51c61cca82bc44b4091aee5efe2f0caabd84b1",
+      "bytes": 9822
+    },
+    {
+      "path": "research/people/directors/KIM_GEHRIG.md",
+      "sha256": "86244aadfee279f7d8695dcc3cb48bcbf6d158609d604a686c712af7590694a9",
+      "bytes": 9940
+    },
+    {
+      "path": "research/people/directors/LUIZA_DE_MORAES.md",
+      "sha256": "bff9a69015faec6137e5ebcade54e5bc6ae24333ae9a7252912b458f033ccd8b",
+      "bytes": 10753
+    },
+    {
+      "path": "research/people/directors/MEJI_ALABI.md",
+      "sha256": "beae5a2c69d0289050a7929251327bf7b126d56c4ee69b24b870cb962bf3ad75",
+      "bytes": 10321
+    },
+    {
+      "path": "research/people/directors/SHOW_YANAGISAWA.md",
+      "sha256": "05ee4f16caa8a956976dc4f441669dd57c1d3f05b9e16d16b556d66136dd4101",
+      "bytes": 9740
+    },
+    {
+      "path": "research/people/directors/SPIKE_JONZE.md",
+      "sha256": "b9c0c1c0f8ebe6cc545f734fbfee067bfa4bfbe946f69ed33b099a36e9ddf17e",
+      "bytes": 10166
+    },
+    {
+      "path": "research/people/directors/STEVE_ROGERS.md",
+      "sha256": "5c6e7c54303c17b0c3a591065359e2550af11d26805cb43fc297f3f49f3e8cb1",
+      "bytes": 10002
+    },
+    {
+      "path": "research/people/dp/ALEXIS_ZABE.md",
+      "sha256": "66ff485388fbf8927b52f206a87011364f3b01e0b7f194fee0f207e3443dcaad",
+      "bytes": 9121
+    },
+    {
+      "path": "research/people/dp/DARIUS_KHONDJI.md",
+      "sha256": "60ace438b345e36db0d22a84d2e264818b2d087cc2eb202a17cbe40f60e7eb16",
+      "bytes": 9659
+    },
+    {
+      "path": "research/people/dp/EMANUELE_ZARLENGA.md",
+      "sha256": "cf9c0f1e220337f747d762adc6825832b79acb304e25d887c6f8e0869b2e3e59",
+      "bytes": 10227
+    },
+    {
+      "path": "research/people/dp/JAKE_POLONSKY.md",
+      "sha256": "70d164b20b51c60f3dfe596044cbfb5105807df50933bfc4dbcc953e282f75aa",
+      "bytes": 8894
+    },
+    {
+      "path": "research/people/dp/JUSTIN_BROWN.md",
+      "sha256": "952f972ded41a5bc34324ab6e7ce408bb12b625fa1ac0b48159088cf24e86b9f",
+      "bytes": 9062
+    },
+    {
+      "path": "research/people/dp/KANAME_ONOYAMA.md",
+      "sha256": "64807ff5aaccfc150a606acf4c39fe36c2609979dabe84c472321bc2515d00b5",
+      "bytes": 8908
+    },
+    {
+      "path": "research/people/dp/MELODIE_PREEL.md",
+      "sha256": "b8c453d7dc449ff3de03fc175a9e4d393bd31bfdff65d92acfe9e7d6bb3d5bfd",
+      "bytes": 8061
+    },
+    {
+      "path": "research/people/dp/SIMONA_SUSNEA.md",
+      "sha256": "754728d62ba369646f5ae5f51e2dca30302cfe3d788d53b88e2f80a94ad825c2",
+      "bytes": 8948
+    },
+    {
+      "path": "research/review-packs/apple_1984/acquisition_notes.md",
+      "sha256": "395017c45d7f09fb7f2ad30ff0485cd725910f13d112e42378e4f60c81a3a538",
+      "bytes": 3250
+    },
+    {
+      "path": "research/review-packs/apple_1984/instrumented_review_notes.md",
+      "sha256": "fe1a4bb2d51df283d1f189ad4789fec5c49de969d44063d2d8c5a5545e97469c",
+      "bytes": 10890
+    },
+    {
+      "path": "research/review-packs/black_shines_brightest/instrumented_review_notes.md",
+      "sha256": "207b1edb64dc371682403ebd58b405c67e4cbd1eec7e0fbf4ab16611badb2399",
+      "bytes": 18762
+    },
+    {
+      "path": "research/review-packs/cadbury_gorilla/instrumented_review_notes.md",
+      "sha256": "c30823b1936ff2ae8a31731f5cb6a781fe391bb3e3ce54c761038649b6662860",
+      "bytes": 19152
+    },
+    {
+      "path": "research/review-packs/dollar_shave_club/instrumented_review_notes.md",
+      "sha256": "306de30a12478f712088b755e2607944c980cb6007c478cc7b65655acfafe3a8",
+      "bytes": 19968
+    },
+    {
+      "path": "research/review-packs/drugstore_boy/lineage_manifest.json",
+      "sha256": "2844e9fc6cc3ad056c7be74c34be952127fe48024a9352f81c6c6f911286d6bf",
+      "bytes": 905
+    },
+    {
+      "path": "research/review-packs/drugstore_male/acquisition_notes.md",
+      "sha256": "8e7af958ceea7ca51267627122f9d939b3b11d91d4dac402094e402ecef7407f",
+      "bytes": 2364
+    },
+    {
+      "path": "research/review-packs/drugstore_male/instrumented_review_notes.md",
+      "sha256": "5ed4307d1b1672f8facbfd82ff6887bc8e6accabf5dbb70fb41083c2e43d5533",
+      "bytes": 6375
+    },
+    {
+      "path": "research/review-packs/drugstore_male/transcript_reviewed.md",
+      "sha256": "7a8dced738a4d7b0a04d2a8f22d5914df79ebd1c92d51381c42234cfe6d512d5",
+      "bytes": 1173
+    },
+    {
+      "path": "research/review-packs/epic_split/instrumented_review_notes.md",
+      "sha256": "e81582fc7fb4eef5a9c6e67b001bee3ae9a98d88497b810ba713beed11f389ea",
+      "bytes": 15806
+    },
+    {
+      "path": "research/review-packs/from_love_to_bingo/instrumented_review_notes.md",
+      "sha256": "e6d01cbf1792aa28bebf8cd1653e320dd5d5c48cdc208dcf23fa96b3ac0f90dd",
+      "bytes": 17833
+    },
+    {
+      "path": "research/review-packs/high_school_girl/instrumented_review_notes.md",
+      "sha256": "ad2124545222f7cf194148979fc9a479b834859fedee16cb9c67a170050f3b6f",
+      "bytes": 22965
+    },
+    {
+      "path": "research/review-packs/honda_cog/instrumented_review_notes.md",
+      "sha256": "7fd78aa17aba51ebb1d43d50eea2d2e9739dd0b3e7cc462fdab4b18896bfe715",
+      "bytes": 19560
+    },
+    {
+      "path": "research/review-packs/reunion/instrumented_review_notes.md",
+      "sha256": "5c7c14d34bc0eccee0a6e52b20c3974a9e02f745b1ed49cbf0a84cd01b1c4d1a",
+      "bytes": 16870
+    },
+    {
+      "path": "research/review-packs/the_greatest/instrumented_review_notes.md",
+      "sha256": "7c267020fa464689ece5fa51d3e34eadfa5409d7110c2a9fd6b52777513e203b",
+      "bytes": 14669
+    },
+    {
+      "path": "research/review-packs/viva_la_vulva/instrumented_review_notes.md",
+      "sha256": "7d1bb8f25c431602237762bbcd94bafe47530b2bbef31333b8bc779c7e790b4b",
+      "bytes": 25072
+    },
+    {
+      "path": "research/review-packs/you_cant_stop_us/instrumented_review_notes.md",
+      "sha256": "84081274fb3c3a91290d32ab498a7861a656dd429c585ed1c848f4ca90cde6c3",
+      "bytes": 19629
+    },
+    {
+      "path": "research/reviews/2026-08-10_CADBURY_GORILLA_INDEPENDENT_CRITIQUE.md",
+      "sha256": "451a2cc61554b43847db6cd5dc4508119ca5a611cc8683afa63731ac462d4e83",
+      "bytes": 13081
+    },
+    {
+      "path": "research/reviews/2026-08-10_HONDA_COG_INDEPENDENT_CRITIQUE.md",
+      "sha256": "fed34da3f09acf5697a9ffe3eab94a3aee3b1374d3788beb6002e111735a8fad",
+      "bytes": 15190
+    },
+    {
+      "path": "research/reviews/2026-08-11_APPLE_1984_V4_CLOSURE.md",
+      "sha256": "f0767cd5a6da0166c64c79080cebb682efae91c67886dbc26e564c837590873d",
+      "bytes": 4365
+    },
+    {
+      "path": "research/reviews/2026-08-11_APPLE_THE_GREATEST_INDEPENDENT_CRITIQUE.md",
+      "sha256": "f12400572d70e5246d22b16de9e267d7738be168583adeb715e837711ad8828b",
+      "bytes": 23428
+    },
+    {
+      "path": "research/reviews/2026-08-11_APPLE_THE_GREATEST_V3_CLOSURE.md",
+      "sha256": "186c0889c79c744baa2e3755f6f07cd72da3da2effaccc257980de18609b6ee3",
+      "bytes": 6116
+    },
+    {
+      "path": "research/reviews/2026-08-11_APPLE_WELCOME_HOME_V4_CLOSURE.md",
+      "sha256": "6ebb2e8f67ea5554acf88d9a83d465d1ac679ad11f0c13795124da0d7caaae03",
+      "bytes": 5495
+    },
+    {
+      "path": "research/reviews/2026-08-11_CADBURY_GORILLA_V3_CLOSURE.md",
+      "sha256": "feae1fa9634c41f0add53e79df502874f37b277b0d0ff25d8f01afe8353b784d",
+      "bytes": 3685
+    },
+    {
+      "path": "research/reviews/2026-08-11_CANAL_THE_BEAR_V3_CLOSURE.md",
+      "sha256": "a61e7125efe66e5bb14e86a5a9d4fdddb73a1a009e4915497ad9b1e3f66dfa60",
+      "bytes": 6103
+    },
+    {
+      "path": "research/reviews/2026-08-11_CHICKEN_LICKEN_LEGEND_OF_BIG_JOHN_V3_CLOSURE.md",
+      "sha256": "a4b5a54abe2c7a1745ca965be5f88580eba2ac0a9c8cdb00646716ac4300e884",
+      "bytes": 4010
+    },
+    {
+      "path": "research/reviews/2026-08-11_DOLLAR_SHAVE_CLUB_OUR_BLADES_V4_CLOSURE.md",
+      "sha256": "7b65b604c1fbe6215858333044830eb1545c92ca9361be93fde4a0471dc4e164",
+      "bytes": 4588
+    },
+    {
+      "path": "research/reviews/2026-08-11_GETTY_FROM_LOVE_TO_BINGO_V3_CLOSURE.md",
+      "sha256": "3273bdf3c3546d3aaf2f1a7c9cee539273b4de754331255cde82f7becf7b65ec",
+      "bytes": 7568
+    },
+    {
+      "path": "research/reviews/2026-08-11_GOOGLE_REUNION_INDEPENDENT_CRITIQUE.md",
+      "sha256": "39266546086eff4b462ab8cd6eea995b176903430464b745f173dede5a1e8fd8",
+      "bytes": 17719
+    },
+    {
+      "path": "research/reviews/2026-08-11_GOOGLE_REUNION_V4_CLOSURE.md",
+      "sha256": "921534ffb65514848bf796af36c5a4b464f1e784ec53e3ac86c012568abf5c8d",
+      "bytes": 4579
+    },
+    {
+      "path": "research/reviews/2026-08-11_GUINNESS_BLACK_SHINES_BRIGHTEST_V3_CLOSURE.md",
+      "sha256": "c51e4034b043c55e71ec4c71a04d1c73e208f7116ee603cbb9e036981f50883b",
+      "bytes": 9342
+    },
+    {
+      "path": "research/reviews/2026-08-11_GUINNESS_SURFER_V3_CLOSURE.md",
+      "sha256": "ac27e1a828210fe3f3bd4d27785f2e33993ddca557af8b88b6329450250066aa",
+      "bytes": 7263
+    },
+    {
+      "path": "research/reviews/2026-08-11_LEVIS_DRUGSTORE_V2_REAUDIT.md",
+      "sha256": "780b023e83dba85b0c2590189adedbba8da461056ed8def40735b999fc4f0daf",
+      "bytes": 8481
+    },
+    {
+      "path": "research/reviews/2026-08-11_LIBRESSE_VIVA_LA_VULVA_V3_CLOSURE.md",
+      "sha256": "c2a7bde9d9245746e208beefca95f35f85a884ae133f9e986f2093574379d944",
+      "bytes": 5442
+    },
+    {
+      "path": "research/reviews/2026-08-11_NIKE_YCSU_V3_CLOSURE.md",
+      "sha256": "2416010fb3a9713bcef19879f2e2b2614592f859ecbceabf51c4cd9e87b046f8",
+      "bytes": 8949
+    },
+    {
+      "path": "research/reviews/2026-08-11_NZTA_MISTAKES_V3_CLOSURE.md",
+      "sha256": "e710c3f08dd3cb0e776d244245c47e6670e9733c5133cb0e49392a838ef45df9",
+      "bytes": 5966
+    },
+    {
+      "path": "research/reviews/2026-08-11_SHISEIDO_HIGH_SCHOOL_GIRL_V2_REAUDIT.md",
+      "sha256": "02157c2acf17a2c3bd31aabeb1d798f6cc25ad06448de60916c2fcb6f6020b45",
+      "bytes": 12485
+    },
+    {
+      "path": "research/reviews/2026-08-11_THAI_LIFE_UNDER_MY_SKIN_V3_CLOSURE.md",
+      "sha256": "eb9a5c63ed2391b1483f3c997cfc7b89ccd5841d9ca4414b294fae68016314f3",
+      "bytes": 8039
+    },
+    {
+      "path": "research/reviews/2026-08-11_VOLVO_EPIC_SPLIT_INDEPENDENT_CRITIQUE.md",
+      "sha256": "00af0a0e2b30a3fe26eaadbdce0fa3ad3fae906780b3c2783d3f4347215ee579",
+      "bytes": 19671
+    },
+    {
+      "path": "research/reviews/2026-08-11_VOLVO_EPIC_SPLIT_V3_CLOSURE.md",
+      "sha256": "21ae4f618b855b8243fcced6f5e899b962fed0dff7b051de02918f3894499bd1",
+      "bytes": 5620
+    },
+    {
+      "path": "research/sources/1983_FOLKLORE_HERTZFELD_APPLE_1984_PRODUCTION.md",
+      "sha256": "f6aad4feb8515382f1420a57bfd5af0006d2d11e86f5008ee3a992f22adac035",
+      "bytes": 1428
+    },
+    {
+      "path": "research/sources/1984_COMPUTER_HISTORY_MUSEUM_APPLE_1984_CONTEXT.md",
+      "sha256": "c66b1bb0ffabf16d1cea8e9a8f369f037c0d0004c0668318eed9c78f604eb351",
+      "bytes": 1062
+    },
+    {
+      "path": "research/sources/1984_DANDAD_APPLE_1984_AWARD_CREDITS.md",
+      "sha256": "12fb9b6d74487b8726a245eb2eb2f8779f5b33dc31e575cc40b09f3c0f3304e7",
+      "bytes": 1114
+    },
+    {
+      "path": "research/sources/1984_INTERNET_ARCHIVE_MARION_STOKES_SUPERBOWL_MASTER.md",
+      "sha256": "20256c697965808a739d33696a1cd6da0ed5d924ab998605023b59635d3bdad6",
+      "bytes": 1382
+    },
+    {
+      "path": "research/sources/1984_PALEY_APPLE_1984_CATALOG_CREDITS.md",
+      "sha256": "9c12fa8e0d64f8f71f3bca20ac0603e508fe66ba90224038b91b7fb0cc38509f",
+      "bytes": 934
+    },
+    {
+      "path": "research/sources/1995_BRITISH_ARROWS_LEVIS_DRUGSTORE_CREDITS_AWARDS.md",
+      "sha256": "97db8e6c4cf37ef62780a9c8e28bd071840860f2c20d102b507005a734b92634",
+      "bytes": 3418
+    },
+    {
+      "path": "research/sources/1995_DANDAD_LEVIS_DRUGSTORE_FEMALE.md",
+      "sha256": "e51f5d8fbe8811e4615bc848d9a9a0233b16378ec8952959afc2e89f14dd97b9",
+      "bytes": 3005
+    },
+    {
+      "path": "research/sources/1995_DANDAD_LEVIS_DRUGSTORE_MALE.md",
+      "sha256": "388f3d8505d0516ede1b85f2d7a96b876c1773bb2969e2fbeed2cab75f0c3a5a",
+      "bytes": 2783
+    },
+    {
+      "path": "research/sources/1995_HAT_LEVIS_DRUGSTORE_ARCHIVE_CREDITS.md",
+      "sha256": "13f7b04f09455b83eb64550e649a878d0de705559f3150cec5bfa639bccb360d",
+      "bytes": 3407
+    },
+    {
+      "path": "research/sources/1997_UIUC_GOLLIN_APPLE_1984_TRANSCRIPT.md",
+      "sha256": "8c209b275886d97fd173170e8f1ed386c23ee8e87e53232fd831b84e27687490",
+      "bytes": 958
+    },
+    {
+      "path": "research/sources/2000_DANDAD_GUINNESS_SURFER_AWARDS.md",
+      "sha256": "ee2a60f69d60036e79ed80de7277f6a3b8ae965239802517876cf6f3f04e0a44",
+      "bytes": 4841
+    },
+    {
+      "path": "research/sources/2000_HAT_GUINNESS_SURFER_ARCHIVE_CREDITS.md",
+      "sha256": "1153024addba113bb49ee01635844af68ed60dd15dbaa87bea82744d7724845e",
+      "bytes": 3961
+    },
+    {
+      "path": "research/sources/2001_GUARDIAN_JONATHAN_GLAZER_DREAM_CLUB.md",
+      "sha256": "fa5d4c04f0f056c8558af9474662f68a241711a5d67e63a4362045c965ad7dd2",
+      "bytes": 4806
+    },
+    {
+      "path": "research/sources/2003_DGA_JOE_PYTKA_MEET_THE_NOMINEES.md",
+      "sha256": "7f2c6ff4a009bc7f55f7a53a220b05c97606fc43a07a6b916c500348f606255c",
+      "bytes": 5121
+    },
+    {
+      "path": "research/sources/2004_HAT_HONDA_COG_ARCHIVE_RECORD.md",
+      "sha256": "f8f69456d5df8eb7527563cdebbc0e009d2bc8b06d69f45219997dd111aff13b",
+      "bytes": 1847
+    },
+    {
+      "path": "research/sources/2004_MACWORLD_APPLE_1984_IPOD_VARIANT.md",
+      "sha256": "6c0a9ef2a1cd16b1abaf2453159c682a372010b2bbd4e9f170e014a8fa1ead91",
+      "bytes": 942
+    },
+    {
+      "path": "research/sources/2004_ONE_CLUB_HONDA_COG_AWARD_RECORD.md",
+      "sha256": "dd571490576f86ff3b0ed55a490a1ede91bf27750d2ad6246023e96361b9ee5d",
+      "bytes": 1711
+    },
+    {
+      "path": "research/sources/2004_SHOTS_HONDA_COG_CREDITS.md",
+      "sha256": "08a74c05353da264593e5db306c932e2f56b688bcf7f7b3ccb6fcf645437333b",
+      "bytes": 1535
+    },
+    {
+      "path": "research/sources/2005_DGA_SPIKE_JONZE_HELLO_TOMORROW.md",
+      "sha256": "b451a3ed4914a6facb425b3035c2462f923774a23d2dc61ee23e00ad73efe1b6",
+      "bytes": 3464
+    },
+    {
+      "path": "research/sources/2006_ASYLUM_JONATHAN_GLAZER_SONY_BRAVIA_PAINT.md",
+      "sha256": "bafd7711b739f55ea74877181a4c0043d9f70d5f62e4d719bb2157cdb2f29929",
+      "bytes": 4518
+    },
+    {
+      "path": "research/sources/2008_BRITISH_ARROWS_CADBURY_GORILLA_CREDITS.md",
+      "sha256": "c4dd4266e52b00da057a411baf3bfae9227d1388831beb8961cbce3c69ac54fa",
+      "bytes": 1674
+    },
+    {
+      "path": "research/sources/2008_HAT_CADBURY_GORILLA_ARCHIVE_RECORD.md",
+      "sha256": "8b6db7a2dafa243015f3b031412033d3993e20a9b60fb2529e3dcb5437ce0048",
+      "bytes": 1745
+    },
+    {
+      "path": "research/sources/2010_DGA_RIDLEY_SCOTT_ADVERTISING_FILM_SCHOOL.md",
+      "sha256": "552e2383f066c69a10685436830ce9a0568ff7325c3bb4a9167a2dfe0a7a3bd8",
+      "bytes": 5625
+    },
+    {
+      "path": "research/sources/2011_BETC_YOUTUBE_CANAL_THE_BEAR_MEDIA.md",
+      "sha256": "a0b370596f832c821b2fcb4df55c7ab61c65fc874f8a247f6726c64b6c1ba1d7",
+      "bytes": 2399
+    },
+    {
+      "path": "research/sources/2011_FXGUIDE_CANAL_THE_BEAR_VFX_PROCESS.md",
+      "sha256": "6eea33242b05b4b5ef6f35aad49792a5f39c2660db5d14f04c031980227b84ce",
+      "bytes": 2566
+    },
+    {
+      "path": "research/sources/2011_PACKSHOTMAG_CANAL_THE_BEAR_CREDITS.md",
+      "sha256": "ba46f77e2fb8cc1138fc64e1c0f4947a24ac2e21d4cafdb89b5bb8237120f486",
+      "bytes": 1722
+    },
+    {
+      "path": "research/sources/2011_SHOTS_CANAL_THE_BEAR_MEDIA_CREDITS.md",
+      "sha256": "a5603ceae417a227154adbf52f46b28216ace2ba7ae95d2b1edf90e8a92f84eb",
+      "bytes": 2249
+    },
+    {
+      "path": "research/sources/2012_AUTODESK_MIKROS_THE_BEAR_VFX.md",
+      "sha256": "5463cb24b326ec5eb8a69ab47fbdba8806f1d183bc4833f291552f8b419f0fdb",
+      "bytes": 1783
+    },
+    {
+      "path": "research/sources/2012_DIGIDAY_DSC_VIDEO_AWARD.md",
+      "sha256": "326e94e3ae6b984055979a4f59c8e53bd0da84b4dc2affbbbbb4ffc4bc6a6955",
+      "bytes": 1255
+    },
+    {
+      "path": "research/sources/2012_DIRECT_NEW_IDEAS_FROM_LOVE_TO_BINGO_CASE.md",
+      "sha256": "95df7d22e845445b3fc1cfd02b1cba264191268cd4b62e0b271c7fcb461bd9ba",
+      "bytes": 1547
+    },
+    {
+      "path": "research/sources/2012_DOLLAR_SHAVE_CLUB_OFFICIAL_UPLOAD.md",
+      "sha256": "52205990df4386f9b4089b84fe766a4f1c455ceb50fcb87110a59ec152a7aade",
+      "bytes": 1508
+    },
+    {
+      "path": "research/sources/2012_ENTREPRENEUR_ANIello_DSC_PLANNING_METHOD.md",
+      "sha256": "f66079fe190d4451513371630737c6236bd7108d736c70944750e2298caac9d8",
+      "bytes": 2423
+    },
+    {
+      "path": "research/sources/2012_LBB_FROM_LOVE_TO_BINGO_PROCESS_CREDITS.md",
+      "sha256": "c6e8d3c0fc509d560df84bb064b8c096dae7b2191dfc5c6129d37106e0dcfe0f",
+      "bytes": 2107
+    },
+    {
+      "path": "research/sources/2012_ONE_CLUB_CANAL_THE_BEAR_AWARD.md",
+      "sha256": "d32a477b7331ea65ba035683f3a21b438d845502f58ca7237f073bf9649840f2",
+      "bytes": 1446
+    },
+    {
+      "path": "research/sources/2012_SPLIT_STUDIO_FROM_LOVE_TO_BINGO_CRAFT.md",
+      "sha256": "6f106cc8adbaab72b35b925cc4e4e79a0eaeafa65289de6465a1bd46ed7264dd",
+      "bytes": 1007
+    },
+    {
+      "path": "research/sources/2012_SPOTCAST_LUCIA_ANIELLO_DSC_EPISODE.md",
+      "sha256": "3fee152000f563260f0a0080c7a87e0cd8f72c49f298dd714221237279f7fba4",
+      "bytes": 1507
+    },
+    {
+      "path": "research/sources/2012_VIMEO_BONKERS_CANAL_THE_BEAR_CREDITS.md",
+      "sha256": "5dc9ee2e0e020f5cd28e718a9c3f88ed2667bf5e933bc3e7444b692cc13283d0",
+      "bytes": 3167
+    },
+    {
+      "path": "research/sources/2012_VIMEO_MARCOS_KOTLHAR_FROM_LOVE_TO_BINGO.md",
+      "sha256": "ba99c81a282a59736c23458e139638395b3521fe0097ab3ada9b9d1c11fe2102",
+      "bytes": 1355
+    },
+    {
+      "path": "research/sources/2013_ECONOMIC_TIMES_REUNION_BRIEF_CAMPAIGN.md",
+      "sha256": "f9213ed1da94773f6ecb8f94b1f87e9784285ac3ce8d5202aa03cd3eeb6c7e93",
+      "bytes": 1657
+    },
+    {
+      "path": "research/sources/2013_GOOGLE_INDIA_REUNION_OFFICIAL_MASTER.md",
+      "sha256": "5b25cf1c7bd2c5676f90f4e9832f4a4a8d454b3460da75cec026e37c86b8db9d",
+      "bytes": 1473
+    },
+    {
+      "path": "research/sources/2013_INDIA_MHA_VISA_RULES_PAKISTAN_EXCEPTION.md",
+      "sha256": "404712f54baa0a704c07648f2f59215af7676b9ab6fba73fb118288c20bd42a4",
+      "bytes": 1804
+    },
+    {
+      "path": "research/sources/2013_MFAA_CISMA_FROM_LOVE_TO_BINGO_COPY.md",
+      "sha256": "eb239dce8ceba4c441d5838fecc83bdd8da4b609396e341e2618fbfbeab2546a",
+      "bytes": 1475
+    },
+    {
+      "path": "research/sources/2013_ONE_CLUB_FROM_LOVE_TO_BINGO_INTERACTIVE.md",
+      "sha256": "36bd9c531bb0e557dbd60fd526710b2daf8d71731442802bfa3c2f5dc7d01139",
+      "bytes": 1343
+    },
+    {
+      "path": "research/sources/2013_REGISTER_REUNION_RESPECT_ORIGINALITY_CONFLICT.md",
+      "sha256": "7648be40e03488e002b8f020e6195b1f589bac390906746cbe7f987536668924",
+      "bytes": 2165
+    },
+    {
+      "path": "research/sources/2013_SHOTS_JUAN_CABRAL_AD_ICON.md",
+      "sha256": "8401c86397f347afc4b9f24a323a15a60aa0f088c761927d2d035689e4f6610d",
+      "bytes": 1983
+    },
+    {
+      "path": "research/sources/2013_VIMEO_EPIC_SPLIT_CORE_CREDITS.md",
+      "sha256": "318abb86e87fe46a65b9aae3573e2109d5a05483a0221894e27f74ba743de4e0",
+      "bytes": 898
+    },
+    {
+      "path": "research/sources/2013_VOLVO_TRUCKS_EPIC_SPLIT_OFFICIAL_COPY.md",
+      "sha256": "983411a25b8852c4609ebc706c032f4d2ada4dbcb66070c21f7748dd94d79261",
+      "bytes": 1310
+    },
+    {
+      "path": "research/sources/2014_ADA_ANDREAS_NILSSON_EPIC_SPLIT_METHOD.md",
+      "sha256": "55ffbda9e5bad1c44ba227e06254e22b8f8677314d6183ecbe88d114b329cfdb",
+      "bytes": 1469
+    },
+    {
+      "path": "research/sources/2014_DANDAD_CADBURY_GORILLA_CASE_STUDY.md",
+      "sha256": "3f756fb1b3ea7ab2ed903c775116d9ccb8d224e99bd0c4c5645e95837a0ccec5",
+      "bytes": 2752
+    },
+    {
+      "path": "research/sources/2014_DANDAD_CANAL_THE_BEAR_CASE_STUDY.md",
+      "sha256": "2b02bd584ee47b13d2b28b0f1b0427448442e4ed2fb0ed1e4721f873823c3584",
+      "bytes": 2559
+    },
+    {
+      "path": "research/sources/2014_ECONOMIC_TIMES_AMIT_SHARMA_METHOD.md",
+      "sha256": "0f207b85e2adfd68669056230608e2382c85e6c2af6f919d893a7bfab8720da5",
+      "bytes": 1428
+    },
+    {
+      "path": "research/sources/2014_FORBES_STEVE_HAYDEN_APPLE_1984_PROCESS.md",
+      "sha256": "aff06ec4aa86f01d3cd16701284c95f235665b2d5c2ea4fbe64e7f14b07802e4",
+      "bytes": 1700
+    },
+    {
+      "path": "research/sources/2014_FORSMAN_VOLVO_LIVE_TEST_SERIES.md",
+      "sha256": "72fdf36b9c9f1224505417656d6dcc6ffc1e53c63eb37d3d745b6992e94dba3a",
+      "bytes": 1465
+    },
+    {
+      "path": "research/sources/2014_KYOORIUS_GOOGLE_REUNION_AWARD_ENTRY.md",
+      "sha256": "71c033fa96aadff6c6028d3306fd156b0149f11e329d50199e4f9f6ca2d5d915",
+      "bytes": 1878
+    },
+    {
+      "path": "research/sources/2014_LBB_ELLEN_KURAS_METHOD.md",
+      "sha256": "d329f886a16b9b87eebb71072781c3c454a292903bb8b3b6ada3aa686e23d519",
+      "bytes": 6149
+    },
+    {
+      "path": "research/sources/2014_SHOTS_DERIN_SEALE_MISTAKES.md",
+      "sha256": "ecfbf7fa463d6141caf208189922d889d6514417eb291ff6181cef7841794deb",
+      "bytes": 2380
+    },
+    {
+      "path": "research/sources/2014_SHOTS_SUKESH_NAYAK_REUNION_METHOD.md",
+      "sha256": "7dfd503ec9bbd6c8a2cb2d5594f0cffcee0df4091050b78beae7c2d0a90fd77d",
+      "bytes": 1258
+    },
+    {
+      "path": "research/sources/2014_VOLVO_DYNAMIC_STEERING_EPIC_SPLIT_CLAIM.md",
+      "sha256": "1c2321311f4c4534a8c0ae21a72d0a142434d2eb37d9504e152ea5b796c39d20",
+      "bytes": 1452
+    },
+    {
+      "path": "research/sources/2015_DANDAD_STEVE_ROGERS_SECRET_LIFE.md",
+      "sha256": "810711ba8c62b063bd5e363097279457924aaa6e960456180426cb5cfcc45882",
+      "bytes": 5417
+    },
+    {
+      "path": "research/sources/2015_FORTUNE_MICHAEL_DUBIN_DSC_PRODUCTION.md",
+      "sha256": "d12f00e2eb69a8bdf6326c29a50d3129d4a22d2339304fa69ced888b31b5722d",
+      "bytes": 2045
+    },
+    {
+      "path": "research/sources/2016_GUARDIAN_HOW_WE_MADE_CADBURY_GORILLA.md",
+      "sha256": "584d570d2af3f8d78dc69a2e9a33f8ac64b0fda19d198059f1d5cbfac6c07f99",
+      "bytes": 1678
+    },
+    {
+      "path": "research/sources/2016_GUARDIAN_HOW_WE_MADE_HONDA_COG.md",
+      "sha256": "de87dc784723b252a586c225184a9ed0cf319e6d95f2f072f78170b6b12cd0a2",
+      "bytes": 1837
+    },
+    {
+      "path": "research/sources/2016_INC_MICHAEL_DUBIN_IMPROV_METHOD.md",
+      "sha256": "4ad7c3cc65be9d581f9040fd6d2dd2d4dd63444efd59bc7fd8ac9cafa1a4c5b8",
+      "bytes": 1725
+    },
+    {
+      "path": "research/sources/2016_SHOTS_IAN_PONS_JEWELL_NARRATIVE_METHOD.md",
+      "sha256": "513c574fdb92c43e1327caab6f17733017c29073782c334c6ea7b96b113db1b3",
+      "bytes": 5765
+    },
+    {
+      "path": "research/sources/2016_VIMEO_REUNION_CRAFT_CREDITS.md",
+      "sha256": "d434f4986e537db478d5edd5e00e7bfbf6f697f05222a82446ee15023ec212d3",
+      "bytes": 1048
+    },
+    {
+      "path": "research/sources/2017_DGA_JOE_PYTKA_ATHLETES.md",
+      "sha256": "3d61c7f62ba8dd10873ce180d5292ab62dfa4570f5c5c29200199aa01681aad8",
+      "bytes": 5244
+    },
+    {
+      "path": "research/sources/2017_SHOTS_IAN_PONS_JEWELL_TREATMENTS_GHOSTWRITING.md",
+      "sha256": "4630cbfd6a56b5b7fc39bfee906769199a2e313ae35a78365ac9c6aa92de5bbb",
+      "bytes": 5455
+    },
+    {
+      "path": "research/sources/2017_VOLVO_EPIC_SPLIT_DRIVER_REHEARSAL_SAFETY.md",
+      "sha256": "ddee9ae5b4919a8aac2af05fcbc26a8ec19ea33c67dfa211669d098b9101d9ba",
+      "bytes": 1486
+    },
+    {
+      "path": "research/sources/2018_APPLEINSIDER_JEFF_BUCHANAN_WELCOME_HOME.md",
+      "sha256": "578d0b4aab4a2c4f8bdbdd7b21480737a2de86d186c1b2b17da748b1104eb3ae",
+      "bytes": 5087
+    },
+    {
+      "path": "research/sources/2018_CHICKEN_LICKEN_BIG_JOHN_OFFICIAL_MICROSITE_PRODUCT.md",
+      "sha256": "940dca936dcc65829844641ea8ae675fdfa76ce9e1a1cac81848ed68a9b0eb35",
+      "bytes": 1872
+    },
+    {
+      "path": "research/sources/2018_DPG_IAN_SEABROOK_UNDERWATER_METHOD.md",
+      "sha256": "f35ddcc347cf4dbba06ac16ce49d697ba1deb4ac0c57ce2410beeee7c6062c42",
+      "bytes": 4846
+    },
+    {
+      "path": "research/sources/2018_LBB_CHICKEN_LICKEN_BIG_JOHN_PROCESS_CREDITS.md",
+      "sha256": "c0e886079cb4a3cab4da816461469ce9e3ef16500e02046bc66f47a99d60f812",
+      "bytes": 4966
+    },
+    {
+      "path": "research/sources/2018_NEWREEL_SHOW_YANAGISAWA_HIGH_SCHOOL_GIRL.md",
+      "sha256": "f8cc9c1cec78faf06da942223cdaba65d01502804f7c02248be56d4f831f12f0",
+      "bytes": 1841
+    },
+    {
+      "path": "research/sources/2019_ARB_FINAL_APPEAL_CHICKEN_LICKEN_BIG_JOHN.md",
+      "sha256": "ec8fdff5a159092bd0858adc855c59a5d3eff1b023ab2e25c7230309cf374151",
+      "bytes": 3201
+    },
+    {
+      "path": "research/sources/2019_BEFORES_AFTERS_GUINNESS_SURFER_VFX.md",
+      "sha256": "25eb277ce68e8ae5773a8733675410313084d8d68b2ba692a1bc5d04c0f7e731",
+      "bytes": 1773
+    },
+    {
+      "path": "research/sources/2019_DANDAD_VIVA_LA_VULVA_CASE_STUDY.md",
+      "sha256": "70a96a27627d03a08cdc77ad8d5c64a1a5fd5cf91efd67f85670f4c2e2260442",
+      "bytes": 2214
+    },
+    {
+      "path": "research/sources/2019_DGA_KIM_GEHRIG_RESEARCH_CASTING_EDIT.md",
+      "sha256": "aa37dec7c358dd900444285c29e30d95d75850fc5172a6ec5572af5908559fed",
+      "bytes": 5266
+    },
+    {
+      "path": "research/sources/2019_IDIDTHAT_BIG_JOHN_BEST_OF_REEL_DIRECTION.md",
+      "sha256": "7f4dd395225d23c20260a4edf3d46d2c2253e5191ead2ba66a04979f1d0b19dd",
+      "bytes": 2042
+    },
+    {
+      "path": "research/sources/2019_SHOOT_DGA_SPIKE_JONZE_WELCOME_HOME.md",
+      "sha256": "f57f16fcf43faa1d5b0a0e6e16a1b79ea2aa5f04039ed0a2c17f1fb94dc7b8b3",
+      "bytes": 1990
+    },
+    {
+      "path": "research/sources/2019_VIMEO_CHOCOLATE_TRIBE_BIG_JOHN_MASTER_CREDITS.md",
+      "sha256": "d261944a673f9cd293ef9e28e9ba3ab6e3ad70b65ebf52ec83cdc6465c51a249",
+      "bytes": 2755
+    },
+    {
+      "path": "research/sources/2020_AUBMC_BREAD_EXAM_ORIGINAL_UPLOAD.md",
+      "sha256": "ea06d3ca9c98ded6f9e6ca416b23085872b3e5c4ee7eb74e603ff04c7cf0be7d",
+      "bytes": 3672
+    },
+    {
+      "path": "research/sources/2020_HONDA_ENGINE_ROOM_COG_LEGACY.md",
+      "sha256": "1c0b8751754bc974c8d1a24b925e3a2438e5e17d63e76fd4bf9281d31be277c7",
+      "bytes": 2006
+    },
+    {
+      "path": "research/sources/2020_LBB_KIM_GEHRIG_THE_GREAT_MEAL_REMOTE_PRODUCTION.md",
+      "sha256": "c1201501a798ea8022ec0434f511c12c58d98470f26fcead7ab48c8ae6d9297e",
+      "bytes": 5120
+    },
+    {
+      "path": "research/sources/2020_MATTERPORT_IPHONE_NTROPIC_PRODUCTION.md",
+      "sha256": "595160c85388090cee97de75b9f50fc72d810c9160df3a598bf4bcd482f61682",
+      "bytes": 3491
+    },
+    {
+      "path": "research/sources/2020_MATTERPORT_IPHONE_OFFICIAL_LANDING.md",
+      "sha256": "fd790bb618ff49c7bca95fa5abc9376d84f1351c1a4d4de7afa31b4c80bd1336",
+      "bytes": 2082
+    },
+    {
+      "path": "research/sources/2020_MATTERPORT_IPHONE_OFFICIAL_LAUNCH.md",
+      "sha256": "f904afa3bf143f1c62c2477775ed5517f081a724f775faeee5749043038274b2",
+      "bytes": 2426
+    },
+    {
+      "path": "research/sources/2020_MATTERPORT_IPHONE_OFFICIAL_VIDEO_NODE.md",
+      "sha256": "c19044793a331d63b750be3a9b65eeef9272c0e9b8b9bd3f873854245589a77c",
+      "bytes": 2384
+    },
+    {
+      "path": "research/sources/2021_2022_BREAD_EXAM_CREDITS_AND_VERSION_TREE.md",
+      "sha256": "3c7904bf79429e50bcbc370aa04b7749366a5ca89751868d7ad32d34fb48d932",
+      "bytes": 5542
+    },
+    {
+      "path": "research/sources/2021_AUB_ICCP_BREAD_EXAM_CAMPAIGN_CONTEXT.md",
+      "sha256": "ba662e5be1bb9aa73d9578f6849b39e34476bd11445fe2e488969afde82b06ec",
+      "bytes": 2528
+    },
+    {
+      "path": "research/sources/2021_BRITISH_CINEMATOGRAPHER_JUSTIN_BROWN_OPEN_SPACES.md",
+      "sha256": "e7b512622648bb763f8af583772dd366082f0bce072e6c99ec8d4b90d01768df",
+      "bytes": 6973
+    },
+    {
+      "path": "research/sources/2021_DIAGEO_BLACK_SHINES_BRIGHTEST_PLATFORM.md",
+      "sha256": "9b9e5abbbc3e0da8be954430ef7efce32c991e3cd9e6d32e4c49c4052274c3e8",
+      "bytes": 1137
+    },
+    {
+      "path": "research/sources/2021_DIRECTORS_LIBRARY_MEJI_ALABI_BLACK_SHINES_BRIGHTEST_SELECT.md",
+      "sha256": "c186822c94203495a315ceb7c7378cabfcea326d55d63ca188f1d0278dd1725a",
+      "bytes": 1270
+    },
+    {
+      "path": "research/sources/2021_IMMORTAL_AWARDS_YOU_CANT_STOP_US_ORAL_HISTORY.md",
+      "sha256": "3739f1c8629bc0ac25be34c6c46c78f06321c2eaabebcaf7c584f19485ecba18",
+      "bytes": 2691
+    },
+    {
+      "path": "research/sources/2021_RIFF_RAFF_OPEN_SPACES_DIRECTORS_STATEMENT.md",
+      "sha256": "adb4a8f374b04cf79841427bebb0845c23b7935ddb2b65f2934892efa5f0c92f",
+      "bytes": 2102
+    },
+    {
+      "path": "research/sources/2021_STASH_MPC_OPEN_SPACES_VFX_PROCESS.md",
+      "sha256": "2cba7049b00cfc5866457a6cc1f9724223546d0015cb48534b54067b004ac176",
+      "bytes": 3202
+    },
+    {
+      "path": "research/sources/2021_VIMEO_MATT_NEWMAN_BLACK_SHINES_BRIGHTEST_CREDITS.md",
+      "sha256": "cae270780c644cbc3ce802445fce7becebe6e162286b0518e99ee3998cf7ff50",
+      "bytes": 1224
+    },
+    {
+      "path": "research/sources/2021_VIMEO_MEGAFORCE_OPEN_SPACES_MASTER_CREDITS.md",
+      "sha256": "91f7e3f13c57358a12a7e0088b05f82f3fe174cbd61230c2e35b075d0dd35e6c",
+      "bytes": 2758
+    },
+    {
+      "path": "research/sources/2021_VIMEO_OLAN_COLLARDY_BLACK_SHINES_BRIGHTEST_CAMERA.md",
+      "sha256": "154c77c7e384b34dc34b7de5e16c93d3daf3adee3f3def829b749626c4d4f3fd",
+      "bytes": 1113
+    },
+    {
+      "path": "research/sources/2022_APPLE_CA_FR_THE_GREATEST_TRANSCRIPT_CONTENT.md",
+      "sha256": "c452c1323aa03ef34c1f7567ac6ac4cf96a30018f84425eb0abb350c62c134b4",
+      "bytes": 8178
+    },
+    {
+      "path": "research/sources/2022_APPLE_NEWSROOM_ACCESSIBILITY_FEATURES.md",
+      "sha256": "aaff2ce8e840849f01da1865976d64c7cf982dc819915a11ff607be05a58327d",
+      "bytes": 8701
+    },
+    {
+      "path": "research/sources/2022_ASC_ELLEN_KURAS_EYE_FOR_UNEXPECTED.md",
+      "sha256": "3e884be519eeca2f35656d87c9c16606f0bffa03fabb1c00247558e051c9e43b",
+      "bytes": 5900
+    },
+    {
+      "path": "research/sources/2022_BRITISH_ARROWS_OPEN_SPACES_AWARDS_CREDITS.md",
+      "sha256": "56605a0e51ffd9cfa5049d7785ad948ef2c8f4b60f3c68639d5f6fedeb9fecf6",
+      "bytes": 1619
+    },
+    {
+      "path": "research/sources/2022_BRITISH_CINEMATOGRAPHER_OPEN_SPACES_RIG_SAFETY_SUPPLEMENT.md",
+      "sha256": "b4d6001360eea458972e1702fc7d7f7bd4bdbbb3e4685491728e9a6e33155c34",
+      "bytes": 4425
+    },
+    {
+      "path": "research/sources/2022_BURBERRY_ANNUAL_REPORT_OPEN_SPACES_BRAND_PURPOSE.md",
+      "sha256": "4809b305074e07c27e11749cef30fdd94ce016cb9ff8c5724fea8fcbf2f02443",
+      "bytes": 2070
+    },
+    {
+      "path": "research/sources/2022_CHANNEL4_DISABILITY_CODE_PORTRAYAL.md",
+      "sha256": "bffe5bf40af24b49bf06e1a2219f80bc7c93048e8ab73d22b4895f4862735750",
+      "bytes": 2344
+    },
+    {
+      "path": "research/sources/2022_COMPANY3_BLACK_SHINES_BRIGHTEST_COPY_COLOR.md",
+      "sha256": "8125aae9a93a2061c1c3cd3a6ce45f2d21cc82a2b8602f9496c6b5c7a7927a5f",
+      "bytes": 1291
+    },
+    {
+      "path": "research/sources/2022_GERETY_AWARDS_OPEN_SPACES_CREDITS.md",
+      "sha256": "0ac89a50a6e72b29bb076716a13bf2b09dfb82d8b119706e887f544dac6bcb09",
+      "bytes": 2239
+    },
+    {
+      "path": "research/sources/2022_LBB_MEJI_ALABI_BLACK_SHINES_BRIGHTEST_VISUAL_LANGUAGE.md",
+      "sha256": "4e8a27be12f231f0fd1fafd600c8e0efe2023feee401a705d26e5afe06069917",
+      "bytes": 1423
+    },
+    {
+      "path": "research/sources/2022_ONE_SHOW_OPEN_SPACES_CASE_CREDITS.md",
+      "sha256": "ebda541b292b2b8298ff0478a64a7241a82357608c2554d31f55093d3aca9e6f",
+      "bytes": 2568
+    },
+    {
+      "path": "research/sources/2022_SPINNEYS_BREAD_EXAM_PARTICIPANT_INTERVIEW.md",
+      "sha256": "085d24a902902b6a90ddeabbe46147cf0d30eb45b03553ab95c29bc8cbeb3bb1",
+      "bytes": 4230
+    },
+    {
+      "path": "research/sources/2023_APPLE_EDUCATION_COMMUNITY_THE_GREATEST_VERSION_LINKS.md",
+      "sha256": "fe709b0092d0b8dac9fe70107a4203b323bdd20404bba62c75769925fafd661f",
+      "bytes": 3063
+    },
+    {
+      "path": "research/sources/2023_BRITISH_ARROWS_APPLE_THE_GREATEST_ARCHIVE_CREDITS.md",
+      "sha256": "5d5d93e53aa69023b969e1d8638f9cac2490a37c0f60312c890e240b9beb36e7",
+      "bytes": 3413
+    },
+    {
+      "path": "research/sources/2023_CANALPLUS_THE_BEAR_AWARDS_RETROSPECTIVE.md",
+      "sha256": "aeac0cbb564b897f3c1d9722802bd4b5d21afc0f0893e1f665c7df5f7233f452",
+      "bytes": 1284
+    },
+    {
+      "path": "research/sources/2023_DANDAD_APPLE_THE_GREATEST_CAST_PROCESS.md",
+      "sha256": "48c93dc9778f13bffae349a3c3ad9f5285018cf76f5d1bbcbb1f9f5a289aa040",
+      "bytes": 3398
+    },
+    {
+      "path": "research/sources/2023_ETBRANDEQUITY_REUNION_RETROSPECTIVE.md",
+      "sha256": "02e3567f7716d630a9ddcc75335b262410e4021071babd850599843910998c50",
+      "bytes": 1744
+    },
+    {
+      "path": "research/sources/2023_JIM_CARROLL_LEVIS_DRUGSTORE_RETROSPECTIVE.md",
+      "sha256": "883aafce772edf5e3afc55c7bd3fa5f0c9cca8ce45e818b8f7f4be9fdbe32498",
+      "bytes": 4045
+    },
+    {
+      "path": "research/sources/2023_MUSE_MEJI_ALABI_BLACK_SHINES_BRIGHTEST_PROCESS.md",
+      "sha256": "4d13957d6e13917ea85cb9c28d15a77a0dee4e9c71a4e370cb258b40af84d1f5",
+      "bytes": 1806
+    },
+    {
+      "path": "research/sources/2023_ONE_CLUB_APPLE_THE_GREATEST_CREDITS.md",
+      "sha256": "a38a4464139a0fa5405784903fd84b30b0a25af4da05c39468dd10d9fa23ac96",
+      "bytes": 3626
+    },
+    {
+      "path": "research/sources/2024_ADFEST_UNDER_MY_SKIN_CRAFT_SCRIPT.md",
+      "sha256": "0c6102a8c279499b458c4e61a2659bd12116c167cd4f4571a8c3f469f5ece1f6",
+      "bytes": 2742
+    },
+    {
+      "path": "research/sources/2024_BREAKWATER_FINAL_COPY_FILM_TEAM.md",
+      "sha256": "cd0bd7f0e60512e32bc4d2c641994bd3810239c913f655ff7d685c27d457f04d",
+      "bytes": 2542
+    },
+    {
+      "path": "research/sources/2024_CHANNEL4_CONSIDERING_WHAT_OFFICIAL_RELEASE_MASTER_CREDITS.md",
+      "sha256": "f8dbea89c36c688b8524111d118c0224ecbb870da66094b4f6fea40a62199f28",
+      "bytes": 4152
+    },
+    {
+      "path": "research/sources/2024_CLIO_UNDER_MY_SKIN_AWARDS.md",
+      "sha256": "1ec84e536775ee64d325c955c716793c7afd9f4ad69ecda1e111f720adfffac6",
+      "bytes": 1008
+    },
+    {
+      "path": "research/sources/2024_DANDAD_UNDER_MY_SKIN_CASTING.md",
+      "sha256": "2ca78cef8e276f7f347aadfc1d01d51bab496fd8894110a8a591bb109c236c24",
+      "bytes": 1143
+    },
+    {
+      "path": "research/sources/2024_ITSNICETHAT_LYNSEY_ATKIN_CONSIDERING_WHAT.md",
+      "sha256": "f1800298f91a64b15e52fe2ad0562b1d151620e2d41890ebe1d431e73d740537",
+      "bytes": 3130
+    },
+    {
+      "path": "research/sources/2024_LBB_CONSIDERING_WHAT_SOUND_EDIT.md",
+      "sha256": "7e5635a1556373a203e542bdf11553f92ab4f65bbe4f7e52f4de7aa75abcac52",
+      "bytes": 1565
+    },
+    {
+      "path": "research/sources/2024_LIA_UNDER_MY_SKIN_AWARDS.md",
+      "sha256": "7138a31561ba5430eb9697396178a9107f9ee0b792ed1f91914ba07ab8864bef",
+      "bytes": 1102
+    },
+    {
+      "path": "research/sources/2024_ONE_ASIA_UNDER_MY_SKIN_VERSIONS.md",
+      "sha256": "56f59f1fe0ba7ec5b9997ede38270d8b350d159e81caea5662d629880c2e5edb",
+      "bytes": 2181
+    },
+    {
+      "path": "research/sources/2024_SHOTS_STEVE_ROGERS_CONSIDERING_WHAT.md",
+      "sha256": "4065c127236eeaea3d43dd353f95a0b5b360058aa3ce4ee79c2bbe8f28869c0e",
+      "bytes": 1397
+    },
+    {
+      "path": "research/sources/2024_THAI_LIFE_YOUTUBE_UNDER_MY_SKIN_OFFICIAL_UPLOAD.md",
+      "sha256": "8a86f8d0cc35eb50a13c24f245c7c7289becd7b5f47a28beb748d5e54f18e30f",
+      "bytes": 2366
+    },
+    {
+      "path": "research/sources/2025_FASTCOMPANY_FINAL_COPY_CREATIVE_CONTROL.md",
+      "sha256": "3939a083cdf7bb44cc60e6017bd465dd344d93e01478d884c27151f61dd51220",
+      "bytes": 3383
+    },
+    {
+      "path": "research/sources/2025_FOCUS_IAN_SEABROOK_LAST_BREATH.md",
+      "sha256": "8c1005946aeb551d7ee9027d95f0bee14a210fe774cd380dacc8d15fd2f10796",
+      "bytes": 5127
+    },
+    {
+      "path": "research/sources/2025_LBB_FINAL_COPY_GLOBAL_RELEASE.md",
+      "sha256": "97e8f56c21f9cfbb972a2ce6935b21135ee03d5f3f3aa83dbf58ce818a17cea2",
+      "bytes": 3329
+    },
+    {
+      "path": "research/sources/2025_LBB_RIDLEY_SCOTT_AD_DIRECTORS_QUESTIONS.md",
+      "sha256": "cb40d9dd18b6d1e12642fbd0ee6b03b28f731e56aed10345042406c839faf3cb",
+      "bytes": 5080
+    },
+    {
+      "path": "research/sources/2025_LOREAL_FINAL_COPY_OFFICIAL_CONTEXT.md",
+      "sha256": "d90a5613c78eb477704dd0eb6b716a7a0921590dd236a9d28bd7625ac95b3be8",
+      "bytes": 2763
+    },
+    {
+      "path": "research/sources/2025_MATTERPORT_PRIVACY_AND_PLATFORM_CURRENT_LIMIT.md",
+      "sha256": "a72fa0104a922f11818cd91ceb500214e6cf5ef18fa9cf59df103785775d6e0f",
+      "bytes": 2441
+    },
+    {
+      "path": "research/sources/2025_PARTIZAN_LEVIS_DRUGSTORE_BOY_PAGE_MEDIA.md",
+      "sha256": "16e3cfa5e9efbb1aa0deaab199730ce5bc5820ebc3cd88887508e53bb3361d03",
+      "bytes": 3662
+    },
+    {
+      "path": "research/sources/2025_SCOPE_AWARDS_CONSIDERING_WHAT.md",
+      "sha256": "33473b210858287f8c298913b8f101297bab248ccae278e51c7f4613b8bd66eb",
+      "bytes": 1335
+    },
+    {
+      "path": "research/sources/2025_TED_FINAL_COPY_PUBLIC_MASTER.md",
+      "sha256": "83438c69bbef6ec6622234011031c5cda881cadfb27f74ef3454064ad29674b5",
+      "bytes": 3342
+    },
+    {
+      "path": "research/sources/2025_THAI_LIFE_AGM_UNDER_MY_SKIN_PURPOSE.md",
+      "sha256": "fe2cf052d0201ef8638dc169d6b152806a3ecd1cf95743a484fdec15639ccad7",
+      "bytes": 1545
+    },
+    {
+      "path": "research/sources/2026_ACADEMY_FILMS_GUINNESS_SURFER_REMASTER_SLATE_LINEAGE.md",
+      "sha256": "910ffa005ae6a4cd1e006da123d9f93b64935a2890661ded785700d7d06805fe",
+      "bytes": 5293
+    },
+    {
+      "path": "research/sources/2026_APPLE_SOUND_ANALYSIS_BUILTIN_CLASSIFIER.md",
+      "sha256": "d5b3ff36a12934056269d25e13572fca069b15da6d949e1950ae368f22140d6b",
+      "bytes": 2863
+    },
+    {
+      "path": "research/sources/2026_GOOGLE_GEMINI_API_ZDR_POLICY.md",
+      "sha256": "9b85b0f975093268b8610e3c86b1c15bafd7370d8c4d28371e9a5208788ea6c1",
+      "bytes": 1773
+    },
+    {
+      "path": "research/sources/2026_MEDICAL_GUIDANCE_BREAD_EXAM_CONTEXT.md",
+      "sha256": "ec6c25b5655a1a96a5d79b77481f16d5adc67d7d1c228615d62df6eeeba42f19",
+      "bytes": 5270
+    },
+    {
+      "path": "research/sources/2026_ONECLUB_FINAL_COPY_EXECUTION_CREDITS.md",
+      "sha256": "9fb02692fae448fc6582c62c6e874b98fec05d2b6d365c3c15a579e5a973d26b",
+      "bytes": 4358
+    },
+    {
+      "path": "research/sources/2026_SHOTS_STEVE_ROGERS_ROGERS_ON_A_ROLL.md",
+      "sha256": "a955b67c60dd58548e753fa4eaf02ce3479527f288eb222fe52cc8bdb5b14545",
+      "bytes": 5245
+    },
+    {
+      "path": "research/sources/2026_WALLPAPER_GUINNESS_SURFER_CASTING.md",
+      "sha256": "eb2ef74f0e078fc73865857166c010cd5cd4f45c97cf7a360ac482aa5e464a77",
+      "bytes": 4736
+    },
+    {
+      "path": "research/sources/UNDATED_CHOCOLATE_TRIBE_BIG_JOHN_VFX_PROCESS.md",
+      "sha256": "9169e3c1488cc9e20bae6091b1a14a367ba7c60d69034688f5603ec78c7b3ed3",
+      "bytes": 2845
+    },
+    {
+      "path": "research/sources/UNDATED_GRANT_DE_SOUSA_BIG_JOHN_PORTFOLIO_AWARDS.md",
+      "sha256": "9e75624ab8205d5c6f12bba160f77402600d2528d7c6a75d361a81040534b9b5",
+      "bytes": 2308
+    },
+    {
+      "path": "research/atlas/precedents.ndjson",
+      "sha256": "4f4175424c8ef0010f682cf28c0301d46e85799240e403bf62ddfeaf62625e06",
+      "source_sha256": "23752d869e548bf2ace2f5caa62a5a1ac685b35867ff24e797e6373cf149c072",
+      "transform": "Three broken source paths resolved; card meaning and evidence levels unchanged.",
+      "bytes": 212891
+    }
+  ],
+  "path_corrections": [
+    {
+      "card": "guinness-local-knowledge-is-situated-not-total",
+      "from": "research/sources/2023_MUSE_MEJI_ALABI_BSB_PROCESS.md",
+      "to": "research/sources/2023_MUSE_MEJI_ALABI_BLACK_SHINES_BRIGHTEST_PROCESS.md"
+    },
+    {
+      "card": "guinness-street-casting-needs-rights-recourse-and-fair-terms",
+      "from": "research/sources/2023_MUSE_MEJI_ALABI_BSB_PROCESS.md",
+      "to": "research/sources/2023_MUSE_MEJI_ALABI_BLACK_SHINES_BRIGHTEST_PROCESS.md"
+    },
+    {
+      "card": "guinness-real-invention-not-engineering-or-safety-proof",
+      "from": "research/sources/2023_MUSE_MEJI_ALABI_BSB_PROCESS.md",
+      "to": "research/sources/2023_MUSE_MEJI_ALABI_BLACK_SHINES_BRIGHTEST_PROCESS.md"
+    }
+  ],
+  "limits": {
+    "watched_integrally": 0,
+    "deep_analyses": 0,
+    "partial_technical_reads": 24,
+    "course_hours": "not_found_in_curriculum_map",
+    "raw_media_bundled": false,
+    "new_research": false
+  }
+}

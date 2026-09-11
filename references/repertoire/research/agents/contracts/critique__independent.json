@@ -1,0 +1,203 @@
+{
+  "contract_id": "critique.independent",
+  "department": "quality_control",
+  "role_name": "Independent Creative Critic",
+  "version": "0.3.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S01",
+    "S05",
+    "S09",
+    "S14",
+    "S24",
+    "S44",
+    "S48"
+  ],
+  "activation": {
+    "mode": "permanent",
+    "when": [
+      "cold pre-seal review before every candidate seal",
+      "before route approval",
+      "before production package",
+      "after any material revision"
+    ],
+    "skip_when": [],
+    "required_inputs": [
+      "brief",
+      "current proposal",
+      "decision ledger",
+      "Decision Questions",
+      "Evidence Registry",
+      "Reference Cards",
+      "Route Set",
+      "Feasibility Ledger",
+      "risk register"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "cold pre-seal review without baseline access",
+      "Gate G twelve-axis scorecard",
+      "Gate G three-count audit",
+      "failure hypotheses",
+      "counterexamples",
+      "revision requests",
+      "seal verdict"
+    ],
+    "may_require": [
+      "independent scoring on all twelve Gate G project axes",
+      "explicit counts of unsupported_claims, techniques_without_function and hidden_gaps",
+      "valid Evidence Registry source key for every external claim",
+      "Reference Cards with provenance, limited mechanism, counterexample and do_not_copy",
+      "Decision Questions with affected decision, answer owner and deadline",
+      "simpler alternative test"
+    ],
+    "may_veto": [
+      "candidate seal with any avoidable unsupported_claim",
+      "candidate seal with any hidden_gap in budget, schedule, access, owner or route architecture",
+      "candidate seal with no valid creative reference",
+      "candidate seal with a required resource absent from budget or timeline",
+      "candidate seal without explicit Decision Questions",
+      "false evidence label",
+      "unresolved safety breach",
+      "surface copying",
+      "state promotion without gates"
+    ],
+    "must_consult": [
+      "strategy.brand",
+      "directing.film",
+      "production.executive",
+      "affected department owner"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What is asserted beyond evidence and where is its Evidence Registry source key?",
+      "What is beautiful but strategically empty?",
+      "Who could read this differently?",
+      "Does the cheap alternative work better?",
+      "Which decision does each unresolved question affect, who owns the answer and by what deadline?",
+      "What would falsify the recommendation?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "counterexample",
+      "documented failure",
+      "cultural counterreading",
+      "simpler mechanism",
+      "evidence gap"
+    ],
+    "preferred_evidence": [
+      "independent criticism",
+      "regulator or community guidance",
+      "failed cases",
+      "primary sources"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "cold pre-seal review",
+      "Gate G twelve-axis scorecard",
+      "Gate G three-count audit",
+      "gate verdict",
+      "revision requests",
+      "residual risk statement"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "critic has not authored the proposal under review and has no baseline access",
+      "all twelve axes are scored: clarity_problem, specificity_choices, route_variety, shot_function_removability, continuity, product_brand_role, producibility, risk_rights_access, references_without_imitation, counterargument, decision_changing_questions and useful_concision",
+      "unsupported_claims, techniques_without_function and hidden_gaps are counted explicitly",
+      "avoidable unsupported claims and hidden gaps are zero before seal",
+      "every creative reference has provenance, limited mechanism, counterexample and do_not_copy",
+      "every required resource appears in both budget and timeline",
+      "every Decision Question names the decision affected, answer owner and deadline; implicit handoffs and kill gates do not qualify",
+      "verdict names exact failed gates"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "all activated contracts",
+      "production.executive"
+    ],
+    "sends_to": [
+      "directing.film",
+      "human approver",
+      "production.executive"
+    ],
+    "shared_artifacts": [
+      "decision ledger",
+      "Decision Questions",
+      "risk register",
+      "version history",
+      "Evidence Registry",
+      "Reference Cards",
+      "Route Set",
+      "Feasibility Ledger",
+      "Gate G pre-seal scorecard"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "unresolved harm or consent question"
+    ],
+    "legal_or_rights_escalations": [
+      "unsupported claim or rights assumption"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "praise without falsification",
+      "self-review presented as cold review",
+      "seal allowed with avoidable unsupported claim or hidden gap",
+      "missing reference provenance accepted",
+      "resource accepted without budget and timeline",
+      "award treated as causality",
+      "critic rewrites work instead of diagnosing",
+      "minority objection generalized as consensus"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

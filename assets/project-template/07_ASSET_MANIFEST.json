@@ -1,0 +1,23 @@
+{
+  "project_id": "{{PROJECT_ID}}",
+  "version": "v001",
+  "status": "TRABALHO",
+  "assets": [
+    {
+      "asset_id": "<<PREENCHER>>",
+      "family": "character|product|prop|environment|wardrobe|look|audio",
+      "name": "<<PREENCHER>>",
+      "narrative_state": "<<PREENCHER>>",
+      "master_file": "<<PREENCHER>>",
+      "source": "<<PREENCHER>>",
+      "rights_status": "<<PREENCHER>>",
+      "preserve": ["<<PREENCHER>>"],
+      "may_vary": ["<<PREENCHER>>"],
+      "forbid": ["<<PREENCHER>>"],
+      "consumer_plan_ids": ["<<PREENCHER>>"],
+      "validation_test": "<<PREENCHER>>",
+      "status": "PLANNED"
+    }
+  ]
+}
+

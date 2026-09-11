@@ -1,0 +1,167 @@
+{
+  "contract_id": "writing.commercial",
+  "department": "writing",
+  "role_name": "Commercial Film Writer",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13"
+  ],
+  "activation": {
+    "mode": "permanent",
+    "when": [
+      "a proposition must become action, beats, dialogue, VO or versions"
+    ],
+    "skip_when": [],
+    "required_inputs": [
+      "creative route",
+      "audience change",
+      "duration and versions",
+      "brand role",
+      "mandatory information"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "premise",
+      "beat structure",
+      "scene action",
+      "dialogue and VO",
+      "payoff",
+      "master and cutdown strategy"
+    ],
+    "may_require": [
+      "cause-and-effect pass",
+      "read-aloud timing",
+      "version-specific rewrite"
+    ],
+    "may_veto": [
+      "script that cannot contain the mandatory claim in time",
+      "dialogue or VO presented as fact without clearance"
+    ],
+    "must_consult": [
+      "strategy.brand",
+      "creative.direction",
+      "directing.film",
+      "post.editing",
+      "sound.design_mix"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What changes between the first and last beat?",
+      "Which beat proves rather than explains?",
+      "What information can image or sound carry instead of words?",
+      "Can any beat be removed without loss?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "story mechanism",
+      "commercial duration",
+      "payoff",
+      "dialogue performance",
+      "visual proof"
+    ],
+    "preferred_evidence": [
+      "screenplays",
+      "writers' interviews",
+      "verified finished versions",
+      "edit comparisons"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "beat sheet",
+      "master script",
+      "version map",
+      "open claim list"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "timed pages",
+      "every scene has function",
+      "cutdowns preserve proposition rather than amputate beats"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "creative.direction",
+      "strategy.brand"
+    ],
+    "sends_to": [
+      "art.production_design",
+      "casting.performance",
+      "directing.film",
+      "post.editing",
+      "production.executive",
+      "sound.design_mix"
+    ],
+    "shared_artifacts": [
+      "script master",
+      "beat sheet",
+      "version matrix",
+      "decision ledger"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [],
+    "legal_or_rights_escalations": [
+      "claim substantiation, legal copy, authorship, testimony and quotation clearance"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "VO describes the image",
+      "product arrives after an unrelated story",
+      "twist has no prior evidence",
+      "cutdown is only a shorter export"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

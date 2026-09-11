@@ -1,0 +1,174 @@
+{
+  "contract_id": "post.editing",
+  "department": "editing",
+  "role_name": "Picture Editor",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S44",
+    "S45",
+    "S46",
+    "S47"
+  ],
+  "activation": {
+    "mode": "permanent",
+    "when": [
+      "every audiovisual narrative",
+      "versions or archive relationships are planned"
+    ],
+    "skip_when": [],
+    "required_inputs": [
+      "script and beats",
+      "director intent",
+      "footage or previs map",
+      "deliverables",
+      "sound assumptions"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "editorial grammar",
+      "information order",
+      "pace hypotheses",
+      "coverage needs",
+      "version strategy",
+      "archive-led production rule"
+    ],
+    "may_require": [
+      "animatic or paper edit",
+      "EDL when timing claims matter",
+      "cutdown-specific structure"
+    ],
+    "may_veto": [
+      "required version cannot preserve claim",
+      "editing expected to invent missing causal beat",
+      "archive used without rights path"
+    ],
+    "must_consult": [
+      "directing.film",
+      "writing.commercial",
+      "sound.design_mix",
+      "music.supervision_score",
+      "vfx.virtual_production"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What idea exists only between shots?",
+      "What information is withheld and when returned?",
+      "Where must the film breathe or accelerate, and how will that be tested?",
+      "What coverage is truly missing?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "information order",
+      "match relation",
+      "ellipsis",
+      "pace",
+      "version",
+      "archive",
+      "counterexample"
+    ],
+    "preferred_evidence": [
+      "editor interviews",
+      "cut comparisons",
+      "EDLs and breakdowns",
+      "verified audiovisual review"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "editorial strategy",
+      "animatic requirements",
+      "coverage requests",
+      "version map"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "timing claims are measured or labeled hypothesis",
+      "cutdowns have own beats",
+      "sound and VFX handoffs are versioned"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "camera.grip.dit",
+      "casting.performance",
+      "directing.film",
+      "music.supervision_score",
+      "production.ad_continuity",
+      "sound.design_mix",
+      "writing.commercial"
+    ],
+    "sends_to": [
+      "color.finishing",
+      "music.supervision_score",
+      "sound.design_mix",
+      "vfx.virtual_production"
+    ],
+    "shared_artifacts": [
+      "script master",
+      "beat sheet",
+      "edit map",
+      "version matrix",
+      "decision ledger"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [],
+    "legal_or_rights_escalations": [
+      "archive, stock, performance, artwork and music synchronization rights"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "fast equals energetic",
+      "montage hides absent story",
+      "scene detection called EDL",
+      "all versions treated as crops"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

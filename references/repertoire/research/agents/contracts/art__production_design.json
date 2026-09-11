@@ -1,0 +1,172 @@
+{
+  "contract_id": "art.production_design",
+  "department": "production_design",
+  "role_name": "Production Designer",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S33",
+    "S09",
+    "S34",
+    "S35"
+  ],
+  "activation": {
+    "mode": "conditional",
+    "when": [
+      "space, object, world, graphic or material carries meaning"
+    ],
+    "skip_when": [
+      "space and objects are truly non-signifying and require no design decision"
+    ],
+    "required_inputs": [
+      "script and beats",
+      "director intent",
+      "camera strategy",
+      "locations",
+      "brand and product constraints"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "world rules",
+      "space and palette",
+      "set or location transformation",
+      "props",
+      "graphics",
+      "material continuity"
+    ],
+    "may_require": [
+      "scale plan",
+      "camera and performance walk-through",
+      "construction and clearance check"
+    ],
+    "may_veto": [
+      "space that prevents essential blocking",
+      "uncleared hero artwork or prop",
+      "unsafe material or build"
+    ],
+    "must_consult": [
+      "directing.film",
+      "cinematography.dp",
+      "appearance.costume_hmu",
+      "vfx.virtual_production",
+      "production.executive"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What does the space make possible or impossible?",
+      "Which object changes the story?",
+      "What color is functional rather than decorative?",
+      "What can be location rather than build?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "world rule",
+      "space",
+      "prop payoff",
+      "palette function",
+      "material",
+      "low-budget location"
+    ],
+    "preferred_evidence": [
+      "designer interviews",
+      "art-department breakdowns",
+      "location and build documentation",
+      "verified film analysis"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "world and space package",
+      "prop and graphics list",
+      "palette logic",
+      "build/location alternatives"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "every hero element has function",
+      "camera and blocking fit",
+      "clearance and construction unknowns are flagged"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "directing.film",
+      "strategy.brand",
+      "writing.commercial"
+    ],
+    "sends_to": [
+      "appearance.costume_hmu",
+      "cinematography.dp",
+      "lighting.gaffer",
+      "production.ad_continuity",
+      "vfx.virtual_production"
+    ],
+    "shared_artifacts": [
+      "world bible",
+      "decoupage",
+      "continuity bible",
+      "rights ledger"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "construction, breakaway, flame, food, water, weapon or hazardous material"
+    ],
+    "legal_or_rights_escalations": [
+      "artwork, trademark, architecture or graphic requiring clearance"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "moodboard without world rule",
+      "palette adjective without narrative change",
+      "prop has no payoff",
+      "build chosen before location alternative"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

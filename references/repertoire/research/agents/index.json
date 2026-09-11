@@ -1,0 +1,121 @@
+{
+  "version": "0.2.0",
+  "status": "provisional",
+  "contract_count": 19,
+  "contracts": [
+    {
+      "contract_id": "strategy.brand",
+      "role_name": "Brand Strategy Lead",
+      "activation_mode": "permanent",
+      "path": "contracts/strategy__brand.json"
+    },
+    {
+      "contract_id": "creative.direction",
+      "role_name": "Creative Direction Lead",
+      "activation_mode": "permanent",
+      "path": "contracts/creative__direction.json"
+    },
+    {
+      "contract_id": "writing.commercial",
+      "role_name": "Commercial Film Writer",
+      "activation_mode": "permanent",
+      "path": "contracts/writing__commercial.json"
+    },
+    {
+      "contract_id": "directing.film",
+      "role_name": "Film Director",
+      "activation_mode": "permanent",
+      "path": "contracts/directing__film.json"
+    },
+    {
+      "contract_id": "production.executive",
+      "role_name": "Executive Producer",
+      "activation_mode": "permanent",
+      "path": "contracts/production__executive.json"
+    },
+    {
+      "contract_id": "critique.independent",
+      "role_name": "Independent Creative Critic",
+      "activation_mode": "permanent",
+      "path": "contracts/critique__independent.json"
+    },
+    {
+      "contract_id": "casting.performance",
+      "role_name": "Casting and Performance Director",
+      "activation_mode": "conditional",
+      "path": "contracts/casting__performance.json"
+    },
+    {
+      "contract_id": "cinematography.dp",
+      "role_name": "Director of Photography",
+      "activation_mode": "permanent",
+      "path": "contracts/cinematography__dp.json"
+    },
+    {
+      "contract_id": "camera.grip.dit",
+      "role_name": "Camera, Grip and DIT Lead",
+      "activation_mode": "conditional",
+      "path": "contracts/camera__grip__dit.json"
+    },
+    {
+      "contract_id": "lighting.gaffer",
+      "role_name": "Gaffer and Lighting Lead",
+      "activation_mode": "conditional",
+      "path": "contracts/lighting__gaffer.json"
+    },
+    {
+      "contract_id": "art.production_design",
+      "role_name": "Production Designer",
+      "activation_mode": "conditional",
+      "path": "contracts/art__production_design.json"
+    },
+    {
+      "contract_id": "appearance.costume_hmu",
+      "role_name": "Costume, Hair and Makeup Lead",
+      "activation_mode": "conditional",
+      "path": "contracts/appearance__costume_hmu.json"
+    },
+    {
+      "contract_id": "production.ad_continuity",
+      "role_name": "Assistant Director and Continuity Lead",
+      "activation_mode": "conditional",
+      "path": "contracts/production__ad_continuity.json"
+    },
+    {
+      "contract_id": "post.editing",
+      "role_name": "Picture Editor",
+      "activation_mode": "permanent",
+      "path": "contracts/post__editing.json"
+    },
+    {
+      "contract_id": "sound.design_mix",
+      "role_name": "Sound Design and Mix Lead",
+      "activation_mode": "permanent",
+      "path": "contracts/sound__design_mix.json"
+    },
+    {
+      "contract_id": "music.supervision_score",
+      "role_name": "Music Supervisor and Composer",
+      "activation_mode": "conditional",
+      "path": "contracts/music__supervision_score.json"
+    },
+    {
+      "contract_id": "vfx.virtual_production",
+      "role_name": "VFX and Virtual Production Supervisor",
+      "activation_mode": "conditional",
+      "path": "contracts/vfx__virtual_production.json"
+    },
+    {
+      "contract_id": "color.finishing",
+      "role_name": "Colorist and Finishing Lead",
+      "activation_mode": "conditional",
+      "path": "contracts/color__finishing.json"
+    },
+    {
+      "contract_id": "treatment.pitch",
+      "role_name": "Director Treatment and Pitch Lead",
+      "activation_mode": "conditional",
+      "path": "contracts/treatment__pitch.json"
+    }
+  ]
+}

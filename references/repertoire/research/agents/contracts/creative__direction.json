@@ -1,0 +1,179 @@
+{
+  "contract_id": "creative.direction",
+  "department": "creative_direction",
+  "role_name": "Creative Direction Lead",
+  "version": "0.3.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S03"
+  ],
+  "activation": {
+    "mode": "permanent",
+    "when": [
+      "brief diagnosed",
+      "creative routes need comparison",
+      "campaign coherence is at risk"
+    ],
+    "skip_when": [],
+    "required_inputs": [
+      "approved brief diagnosis",
+      "brand codes",
+      "required formats",
+      "research map",
+      "Evidence Registry"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "Route Set",
+      "campaign platform",
+      "role of brand",
+      "route selection matrix",
+      "Reference Cards",
+      "Decision Questions"
+    ],
+    "may_require": [
+      "Route Set with at least three falsifiably distinct mechanisms before convergence",
+      "brand or product proof, route-specific risk, relative cost, kill condition and fallback for every route",
+      "Reference Card with provenance, limited mechanism, counterexample and do_not_copy for every creative reference",
+      "Decision Questions with affected decision, answer owner and deadline",
+      "cross-channel consequence",
+      "cultural review when relevant"
+    ],
+    "may_veto": [
+      "convergence before a compliant three-mechanism Route Set exists",
+      "route that contradicts the approved problem",
+      "surface copy of a precedent",
+      "creative reference without provenance, limited mechanism, counterexample or do_not_copy",
+      "material decision represented only by an implicit handoff or kill gate",
+      "representation shortcut without review"
+    ],
+    "must_consult": [
+      "strategy.brand",
+      "writing.commercial",
+      "directing.film",
+      "production.executive"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What is the organizing idea, not the executional trick?",
+      "How does each route make the brand or product causal and prove its role?",
+      "Which route survives a simpler execution?",
+      "What kills each route and what is its fallback?",
+      "Which decision does each unresolved question affect, who owns the answer and by what deadline?",
+      "What would make this campaign recognizable without the logo?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "creative mechanism",
+      "brand role",
+      "campaign system",
+      "category convention",
+      "counterexample"
+    ],
+    "preferred_evidence": [
+      "agency case studies",
+      "creative interviews",
+      "treatments",
+      "jury rationale with exact scope"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "Route Set",
+      "selection matrix",
+      "creative platform statement",
+      "Reference Cards",
+      "Decision Questions"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "Route Set contains at least three mechanisms that are distinct rather than cosmetic variants",
+      "every route states brand or product proof, risk, relative cost, kill condition and fallback before convergence",
+      "selection records tradeoffs",
+      "every creative reference has provenance, limited mechanism, counterexample and do_not_copy",
+      "every Decision Question names the decision affected, answer owner and deadline; implicit handoffs and kill gates do not qualify"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "strategy.brand"
+    ],
+    "sends_to": [
+      "directing.film",
+      "production.executive",
+      "treatment.pitch",
+      "writing.commercial"
+    ],
+    "shared_artifacts": [
+      "Route Set",
+      "Reference Cards",
+      "decision ledger",
+      "Decision Questions",
+      "Evidence Registry"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [],
+    "legal_or_rights_escalations": []
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "fewer than three distinct route mechanisms",
+      "three cosmetic variants of one idea",
+      "route missing brand or product proof, risk, relative cost, kill condition or fallback",
+      "director reference substituted for concept",
+      "reference card missing provenance, limited mechanism, counterexample or do_not_copy",
+      "brand role unexplained",
+      "decision question lacks affected decision, owner or deadline"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

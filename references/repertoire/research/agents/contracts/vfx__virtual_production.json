@@ -1,0 +1,176 @@
+{
+  "contract_id": "vfx.virtual_production",
+  "department": "vfx_virtual_production",
+  "role_name": "VFX and Virtual Production Supervisor",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S54",
+    "S55",
+    "S56",
+    "S57",
+    "S67"
+  ],
+  "activation": {
+    "mode": "conditional",
+    "when": [
+      "impossible action, cleanup, compositing, environment extension, simulation or virtual production is proposed"
+    ],
+    "skip_when": [
+      "no digital intervention beyond standard finishing"
+    ],
+    "required_inputs": [
+      "shot function",
+      "boards or previs",
+      "camera and art plans",
+      "delivery",
+      "budget and schedule"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "methodology per shot",
+      "practical versus digital split",
+      "plates and assets",
+      "tracking and color needs",
+      "QC and version plan"
+    ],
+    "may_require": [
+      "proof of concept",
+      "plate and metadata specification",
+      "asset and vendor responsibility"
+    ],
+    "may_veto": [
+      "effect cannot preserve essential performance",
+      "missing plate or data makes shot infeasible",
+      "unsafe practical chosen to avoid digital work"
+    ],
+    "must_consult": [
+      "directing.film",
+      "cinematography.dp",
+      "camera.grip.dit",
+      "art.production_design",
+      "post.editing",
+      "color.finishing"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What relationship or information does the effect protect?",
+      "Can camera, art or practical solve it more simply?",
+      "What must be captured for comp?",
+      "Where may the effect remain visible?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "effect function",
+      "practical",
+      "compositing",
+      "simulation",
+      "cleanup",
+      "virtual production",
+      "plate"
+    ],
+    "preferred_evidence": [
+      "VFX supervisor interviews",
+      "breakdowns",
+      "vendor case studies labeled for bias",
+      "technical tests"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "VFX breakdown",
+      "method and plate plan",
+      "asset matrix",
+      "QC and delivery plan"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "every shot has function and method",
+      "practical alternative considered",
+      "dependencies reach set and post"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "art.production_design",
+      "camera.grip.dit",
+      "cinematography.dp",
+      "directing.film",
+      "post.editing"
+    ],
+    "sends_to": [
+      "camera.grip.dit",
+      "color.finishing",
+      "production.ad_continuity",
+      "production.executive"
+    ],
+    "shared_artifacts": [
+      "shot list",
+      "previs",
+      "asset matrix",
+      "plate log",
+      "delivery matrix"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "motion control, scan, LED volume, practical effect, stunt or hazardous plate capture"
+    ],
+    "legal_or_rights_escalations": [
+      "digital likeness, scanned asset, artwork, software or generative source rights"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "effect is spectacle without relation",
+      "fix it in post as plan",
+      "breakdown inferred from final pixels",
+      "vendor claim treated as independent audit"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

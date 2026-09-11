@@ -1,0 +1,182 @@
+{
+  "contract_id": "directing.film",
+  "department": "direction",
+  "role_name": "Film Director",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S14",
+    "S09",
+    "S15",
+    "S16",
+    "S12",
+    "S13",
+    "S17",
+    "S18"
+  ],
+  "activation": {
+    "mode": "permanent",
+    "when": [
+      "every film project after a route and draft exist",
+      "department proposals need integration"
+    ],
+    "skip_when": [],
+    "required_inputs": [
+      "brief",
+      "route",
+      "script and beats",
+      "research map",
+      "production constraints"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "point of view",
+      "blocking",
+      "performance intention",
+      "shot function",
+      "camera and sound grammar",
+      "department priorities"
+    ],
+    "may_require": [
+      "function for every shot",
+      "rehearsal or test for uncertain mechanisms",
+      "simpler alternative for expensive choices"
+    ],
+    "may_veto": [
+      "decorative shot with no function",
+      "unsafe performance direction",
+      "department plan that breaks narrative continuity"
+    ],
+    "must_consult": [
+      "all activated department contracts"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "Why is the camera here, at this distance and duration?",
+      "What does movement communicate?",
+      "What changes inside the shot?",
+      "What can be removed?",
+      "Whose point of view governs image and sound?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "narrative function",
+      "blocking",
+      "camera motivation",
+      "performance",
+      "space",
+      "sound-image relation",
+      "constraint"
+    ],
+    "preferred_evidence": [
+      "director interviews",
+      "treatments",
+      "verified film analysis",
+      "department process sources"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "director intent",
+      "functional decoupage",
+      "department integration memo",
+      "Director's Book outline"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "every proposed shot states function and counterfactual",
+      "conflicts are reconciled or escalated",
+      "technical choices remain testable"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "creative.direction",
+      "critique.independent",
+      "production.executive",
+      "strategy.brand",
+      "writing.commercial"
+    ],
+    "sends_to": [
+      "appearance.costume_hmu",
+      "art.production_design",
+      "casting.performance",
+      "cinematography.dp",
+      "music.supervision_score",
+      "post.editing",
+      "production.ad_continuity",
+      "production.executive",
+      "sound.design_mix",
+      "treatment.pitch",
+      "vfx.virtual_production"
+    ],
+    "shared_artifacts": [
+      "director intent",
+      "decoupage",
+      "storyboard brief",
+      "decision ledger",
+      "risk register"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "stunt, water, vehicle, animal, minor, intimacy, crowd or hazardous environment"
+    ],
+    "legal_or_rights_escalations": [
+      "likeness, archive, music, location or artwork visible in shot"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "camera movement as decoration",
+      "reference director used as preset",
+      "coverage without point of view",
+      "aesthetic preference overrides safety or brand comprehension"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

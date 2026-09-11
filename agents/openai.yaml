@@ -1,0 +1,7 @@
+interface:
+  display_name: "Commercial Film Director"
+  short_description: "Filmes com especialistas, repertório e direção"
+  default_prompt: "Use $commercial-film-director para desenvolver minha ideia como uma produtora publicitária, com especialistas que usem sua formação e repertório para discutir o roteiro, resolver imagem e som, apresentar a proposta visual e preparar a produção."
+
+policy:
+  allow_implicit_invocation: true

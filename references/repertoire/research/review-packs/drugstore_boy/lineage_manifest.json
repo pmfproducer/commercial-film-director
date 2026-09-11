@@ -1,0 +1,26 @@
+{
+  "work": "Levi's Drugstore (Boy Version)",
+  "status": "ACQUIRED_FOR_LINEAGE_COMPARISON_NOT_REVIEW_PACKED_NOT_WATCHED_NOT_HEARD",
+  "source_page": "https://partizan.com/work/levis-drugstore-boy-version/",
+  "source_asset": "Wiredrive 3354696",
+  "local_analysis_path": "/tmp/super-director-media/levis_drugstore_boy_partizan.mp4",
+  "sha256": "7dd269c7680560a369925e34f083c4e692e4bc1bf6d8d9508a593abdc82633c7",
+  "size_bytes": 17656458,
+  "duration_seconds": 91.68,
+  "video": {
+    "codec": "h264",
+    "width": 640,
+    "height": 480,
+    "fps": "25/1"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "limits": [
+    "No dense pack or continuous playback was performed for this node.",
+    "Acquisition and metadata do not prove equivalence with D&AD Male or HAT 60 s.",
+    "The source URL is tokenized; the hash identifies the acquired local object."
+  ]
+}

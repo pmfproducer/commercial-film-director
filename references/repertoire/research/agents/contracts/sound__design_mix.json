@@ -1,0 +1,172 @@
+{
+  "contract_id": "sound.design_mix",
+  "department": "sound",
+  "role_name": "Sound Design and Mix Lead",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S48",
+    "S49",
+    "S50",
+    "S46",
+    "S44"
+  ],
+  "activation": {
+    "mode": "permanent",
+    "when": [
+      "every audiovisual narrative",
+      "dialogue, environment, silence or sonic transition carries meaning"
+    ],
+    "skip_when": [],
+    "required_inputs": [
+      "script and beats",
+      "director point of view",
+      "locations",
+      "edit and delivery plan",
+      "music assumptions"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "point of audition",
+      "production sound needs",
+      "sound map",
+      "silence and transition strategy",
+      "mix hierarchy",
+      "deliverables"
+    ],
+    "may_require": [
+      "location sound test",
+      "beat map separating voice, environment, effect, silence and music",
+      "playback review"
+    ],
+    "may_veto": [
+      "critical dialogue cannot be captured or replaced",
+      "unsafe SPL",
+      "sound claim based only on waveform"
+    ],
+    "must_consult": [
+      "directing.film",
+      "post.editing",
+      "music.supervision_score",
+      "production.executive"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "Whose ears organize the scene?",
+      "What does sound reveal before image?",
+      "Where is silence real versus relative?",
+      "What must be captured on set?",
+      "What owns the mix at each beat?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "point of audition",
+      "environment",
+      "silence",
+      "transition",
+      "production sound",
+      "mix hierarchy"
+    ],
+    "preferred_evidence": [
+      "sound-designer and mixer interviews",
+      "verified listening notes",
+      "location tests",
+      "delivery standards"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "sonic concept",
+      "sound map by beat",
+      "capture list",
+      "mix and delivery matrix"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "all five layers are distinguished",
+      "listening evidence is separate from measurement",
+      "dialogue and music conflicts are resolved"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "directing.film",
+      "music.supervision_score",
+      "post.editing",
+      "writing.commercial"
+    ],
+    "sends_to": [
+      "color.finishing",
+      "music.supervision_score",
+      "post.editing",
+      "production.ad_continuity"
+    ],
+    "shared_artifacts": [
+      "beat sheet",
+      "sound map",
+      "version matrix",
+      "delivery matrix"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "high SPL, pyrotechnic, vehicle, water, weapon or hazardous recording environment"
+    ],
+    "legal_or_rights_escalations": [
+      "voice, library, sample and music rights"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "waveform treated as listening",
+      "music expected to create missing emotion",
+      "silence asserted without audition",
+      "sound starts after picture lock"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}

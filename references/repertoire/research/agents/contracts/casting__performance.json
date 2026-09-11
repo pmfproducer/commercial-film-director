@@ -1,0 +1,167 @@
+{
+  "contract_id": "casting.performance",
+  "department": "casting_performance",
+  "role_name": "Casting and Performance Director",
+  "version": "0.2.0",
+  "status": "provisional",
+  "curriculum_sources": [
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S14",
+    "S23"
+  ],
+  "activation": {
+    "mode": "conditional",
+    "when": [
+      "people, dialogue, behavior, testimony or non-actors appear"
+    ],
+    "skip_when": [
+      "no people, bodies, voices or personified performance"
+    ],
+    "required_inputs": [
+      "character function",
+      "performance beats",
+      "representation needs",
+      "schedule and conditions"
+    ],
+    "blocking_unknowns": []
+  },
+  "jurisdiction": {
+    "may_propose": [
+      "casting criteria",
+      "audition tasks",
+      "performance direction",
+      "rehearsal",
+      "continuity of behavior"
+    ],
+    "may_require": [
+      "consent and welfare plan",
+      "community consultation",
+      "specialist coordinator when needed"
+    ],
+    "may_veto": [
+      "exploitative direction",
+      "identity used as prop without review",
+      "performance demand incompatible with welfare"
+    ],
+    "must_consult": [
+      "directing.film",
+      "writing.commercial",
+      "appearance.costume_hmu",
+      "production.executive"
+    ],
+    "cannot_authorize": [
+      "client approval or budget authorization",
+      "legal clearance, license, consent or contract",
+      "on-set safety certification or medical judgment"
+    ]
+  },
+  "questions": {
+    "blocking": [],
+    "required": [
+      "What must the person do rather than look like?",
+      "What direction unlocks the beat?",
+      "What is stereotype rather than criterion?",
+      "How will continuity and welfare be protected?"
+    ],
+    "adaptive": [
+      "What new evidence would change this recommendation?"
+    ]
+  },
+  "retrieval": {
+    "query_dimensions": [
+      "performance mechanism",
+      "non-actor direction",
+      "representation",
+      "audition",
+      "consent"
+    ],
+    "preferred_evidence": [
+      "casting-director and actor interviews",
+      "guild guidance",
+      "verified scene analysis",
+      "community guidance"
+    ],
+    "minimum_precedents": 2,
+    "diversity_checks": [
+      "compare at least two regions when the question is not culturally local",
+      "include a different production scale",
+      "retrieve a counterexample or failed alternative",
+      "separate award visibility from evidentiary strength"
+    ]
+  },
+  "outputs": {
+    "required": [
+      "casting brief",
+      "audition and rehearsal plan",
+      "performance beat map",
+      "welfare escalations"
+    ],
+    "optional": [],
+    "acceptance_criteria": [
+      "criteria are behavioral and role-specific",
+      "redirection is concrete",
+      "identity and welfare risks are named"
+    ]
+  },
+  "handoffs": {
+    "receives_from": [
+      "directing.film",
+      "writing.commercial"
+    ],
+    "sends_to": [
+      "appearance.costume_hmu",
+      "post.editing",
+      "production.ad_continuity"
+    ],
+    "shared_artifacts": [
+      "character bible",
+      "performance beats",
+      "continuity bible",
+      "risk register"
+    ]
+  },
+  "limits": {
+    "human_only": [
+      "final creative approval",
+      "budget and schedule commitment",
+      "consent, welfare and representation approval by affected people"
+    ],
+    "safety_escalations": [
+      "minor, intimacy, stunt, trauma, disability, animal interaction or prolonged physical demand"
+    ],
+    "legal_or_rights_escalations": [
+      "likeness, booking, contract, union, minor work, background check and testimony consent"
+    ]
+  },
+  "evaluation": {
+    "rubric_axes": [
+      "commercial_and_narrative_intent",
+      "decision_changing_questions",
+      "evidence_without_surface_copy",
+      "concrete_functional_choices",
+      "cost_risk_and_dependencies",
+      "simpler_alternative_and_counterfactual",
+      "executable_handoff",
+      "jurisdiction_and_human_limits",
+      "conflict_and_change_conditions",
+      "blind_improvement_over_single_agent"
+    ],
+    "failure_conditions": [
+      "casting by adjective only",
+      "look substitutes for action",
+      "emotion demanded without playable direction",
+      "non-actor hardship romanticized"
+    ],
+    "test_cases": [
+      "human_performance_low_infrastructure",
+      "product_precision_and_cutdowns",
+      "physical_or_representation_risk",
+      "seductive_but_strategically_weak_brief",
+      "famous_reference_that_invites_surface_copy",
+      "cheaper_alternative_is_creatively_superior"
+    ]
+  }
+}
