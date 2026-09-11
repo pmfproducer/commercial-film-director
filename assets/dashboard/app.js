@@ -47,6 +47,7 @@ function humanize(text){
   value=value.replace(/\bAPPROVED\b/g,"aprovado");
   value=value.replace(/\bREVISE\b/g,"em revisão");
   value=value.replace(/\bSUBMITTED\b/g,"entregue para revisão");
+  value=value.replace(/\bNOT_TESTED\b/g,"ainda não testado");
   value=value.replace(/\bR([1-3])\b/g,"rota $1");
   return value;
 }
