@@ -1,5 +1,9 @@
 # Histórico de versões
 
+## v6.1.5 — Ajuste de contexto na tradução
+
+- Corrige as expressões “exportação final”, “exportação real” e “resultado aprovado” para preservar a gramática da leitura.
+
 ## v6.1.4 — Jargão audiovisual traduzido
 
 - Traduz abreviações e termos comuns de fotografia, efeitos e pós-produção na leitura normal.

@@ -61,11 +61,14 @@ function humanize(text){
   value=value.replace(/\bDP\b/g,"fotografia");
   value=value.replace(/\bFoley\b/g,"efeitos sonoros");
   value=value.replace(/\bmix\b/gi,"mixagem");
+  value=value.replace(/\bexport final\b/gi,"exportação final");
+  value=value.replace(/\bexport real\b/gi,"exportação real");
   value=value.replace(/\bexport\b/gi,"entrega");
   value=value.replace(/\blook\b/gi,"aparência");
   value=value.replace(/\bbrief\b/gi,"briefing");
   value=value.replace(/\bDOF\b/g,"profundidade de campo");
   value=value.replace(/\bQC\b/g,"controle de qualidade");
+  value=value.replace(/\bPASS\b/g,"resultado aprovado");
   value=value.replace(/\bR([1-3])\b/g,"rota $1");
   return value;
 }
