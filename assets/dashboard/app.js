@@ -22,7 +22,7 @@ const verdictCopy={ACCEPT:"Decisão aceita",REVISE:"Revisão solicitada",MORE_RE
 const documentCopy={"00_SOURCE_MANIFEST":"Fontes e materiais recebidos","02_ROTAS_E_DIRECAO":"Rotas criativas e direção","00_DIRECTION_LOCK":"Decisões travadas pela direção","03_ROTEIRO_LITERARIO":"Roteiro literário","03_ROTEIRO_AV":"Roteiro audiovisual","04_TRATAMENTO_DIRECAO":"Tratamento de direção","04_MAPA_CENA_PERFORMANCE":"Mapa de cena e performance","05_DIRECAO_FOTOGRAFIA":"Direção de fotografia","05_DIRECAO_ARTE":"Direção de arte","05_ARQUITETURA_MONTAGEM_SOM":"Montagem e desenho de som","05_BIBLIA_VISUAL_SONORA":"Bíblia visual e sonora","06_ROTEIRO_TECNICO":"Roteiro técnico","06_SHOT_LIST":"Lista de planos","07_ASSET_BIBLE":"Bíblia de elementos e continuidade","07_ASSET_MANIFEST":"Manifesto de elementos","08_STORYBOARD_PREVIS":"Storyboard e pré-visualização","09_PLANO_PRODUCAO_HIBRIDA":"Plano de produção","09_PLANO_GERACAO_IA":"Plano de geração com IA","10_SHOT_PACKETS_PROMPTS":"Pacotes de execução por plano","11_MONTAGEM_SOM_POS":"Montagem, som e pós-produção","12_QA_MASTER_VERSOES":"Controle de qualidade e versões"};
 function esc(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function filename(path){return String(path).split("/").pop();}
-function textLabel(path){const base=filename(path).replace(/\.(md|json)$/i,"");return documentCopy[base]||base.replace(/^\d+_/,"").replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());}
+function textLabel(path){const raw=String(path);const base=filename(raw).replace(/\.(md|json)$/i,"");const clean=base.replace(/^\d+_/,"").replaceAll(" ","_");const match=Object.entries(documentCopy).find(([key])=>key.replace(/^\d+_/,"")===clean);if(documentCopy[base])return documentCopy[base];if(match)return match[1];if(!/[A-Z_]{3,}/.test(base))return raw;return clean.replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());}
 function humanize(text){
   let value=String(text??"");
   const phases={CREATIVE_DIRECTION:"direção criativa",BRIEF_STRATEGY:"briefing",SCRIPT:"roteiro",DIRECTOR_TREATMENT:"tratamento",VISUAL_SOUND_SYSTEM:"imagem, arte e som",DECOUPAGE:"decupagem",ASSETS_CONTINUITY:"elementos e continuidade",STORYBOARD_PREVIS:"storyboard",AI_EXECUTION_PLAN:"plano de produção",SHOT_PACKETS:"pacotes por plano",POST_DELIVERY:"montagem e pós",QA_VERSIONS:"controle de qualidade"};
@@ -48,6 +48,15 @@ function humanize(text){
   value=value.replace(/\bREVISE\b/g,"em revisão");
   value=value.replace(/\bSUBMITTED\b/g,"entregue para revisão");
   value=value.replace(/\bNOT_TESTED\b/g,"ainda não testado");
+  value=value.replace(/\bHandoff\b/g,"passagem para a próxima área");
+  value=value.replace(/\bfinishing\b/gi,"finalização");
+  value=value.replace(/\broughboard\b/gi,"storyboard preliminar");
+  value=value.replace(/\bCue sheet\b/gi,"mapa de som");
+  value=value.replace(/\bFitting\b/gi,"prova de figurino");
+  value=value.replace(/\bloudness\b/gi,"nível de volume");
+  value=value.replace(/\bEncode\b/gi,"exportação");
+  value=value.replace(/\bPOST2D\b/g,"pós-produção 2D");
+  value=value.replace(/\bsync\b/gi,"sincronização");
   value=value.replace(/\bR([1-3])\b/g,"rota $1");
   return value;
 }

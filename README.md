@@ -11,6 +11,9 @@ Skill de criação e realização publicitária com direção e especialistas te
 O painel local permite criar ou abrir um projeto, acompanhar as 12 etapas, consultar
 as tarefas reais dos especialistas, editar documentos com histórico, aprovar ou pedir
 revisões, navegar pelos storyboards existentes e exportar o projeto em ZIP.
+Na leitura, códigos de rodada, testes, status e versões aparecem em português claro;
+os identificadores técnicos continuam preservados no arquivo original e no registro
+expansível de cada especialista.
 
 Depois de instalar, abra com:
 

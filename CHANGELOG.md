@@ -1,5 +1,10 @@
 # Histórico de versões
 
+## v6.1.3 — Terminologia de produção traduzida
+
+- Traduz termos comuns de produção e pós-produção na leitura do painel, como handoff, roughboard, finishing, cue sheet, fitting, loudness e encode.
+- Mantém os nomes canônicos nos arquivos e nos registros técnicos.
+
 ## v6.1.2 — Status de teste traduzido
 
 - Traduz o último status técnico visível na leitura normal: \`NOT_TESTED\` vira “ainda não testado”.
