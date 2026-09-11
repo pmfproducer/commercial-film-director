@@ -71,6 +71,8 @@ function humanize(text){
   value=value.replace(/\bDOF\b/g,"profundidade de campo");
   value=value.replace(/\bQC\b/g,"controle de qualidade");
   value=value.replace(/\bPASS\b/g,"resultado aprovado");
+  value=value.replace(/\bcontrole de qualidade do exportação real\b/gi,"controle de qualidade da exportação real");
+  value=value.replace(/\bleitura do exportação final\b/gi,"leitura da exportação final");
   value=value.replace(/\bR([1-3])\b/g,"rota $1");
   return value;
 }

@@ -49,3 +49,7 @@
 
 O ensaio valida desenvolvimento documental e roughboard. Não representa filme
 captado, master, resposta de público ou visionamento integral do acervo.
+
+## 6.1.7 — 2026-09-11
+
+- Corrigida a concordância de frases traduzidas sobre leitura da exportação final e controle de qualidade da exportação real.
